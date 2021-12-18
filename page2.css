@@ -1,0 +1,130 @@
+
+/*학교교수진연구실적홍보 첫번째 소개 페이지*/
+
+main {
+    max-width: 1504px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_info {
+    padding-top: 260px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(114, 75, 114);
+}
+
+.header_info h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.header_info p {
+    line-height: 160%;
+    font-size: 16px;
+}
+
+.header_info_photo {
+    width: 1440px;
+    height: 355px;
+    background-color: violet;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+.awards {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+    padding: 48px 0;
+}
+.awards_boxs { display: flex; background-color: whitesmoke; width: 950px; margin: 0 auto;
+    justify-content: space-between;}
+.award{display: flex; flex-direction: column;}
+.award p {margin-bottom: 20px;}
+.award img {width: 214px; height: 214px;}
+
+.mid_content {margin-top: 160px; padding: 0 32px; margin-bottom: 160px;}
+.mid_content_box {display: flex; flex-wrap: wrap; gap: 32px;}
+.mid_content_box h2{flex: 1 0 100%; font-size: 36px;}
+.mid_content_box:nth-of-type(1) {margin-bottom: 120px;}
+.mid_content_box:nth-of-type(1) h2{flex: 1 0 100%; font-size: 36px; background-color: blueviolet;}
+.mid_content_box:nth-of-type(2) h2{flex: 1 0 100%; font-size: 36px; background-color: cadetblue; padding-left: 859px;}
+.mid_content_box p{flex: 1 0 581px; font-size: 16px; line-height: 160%;}
+.mid_content_box div.img{flex: 1 1 827px; height: 411px; background-color: blue;}
+
+.lab { background-color:lightsalmon; padding: 0 32px;}
+.lab_content_box {display: flex; flex-wrap: wrap; gap: 154px;}
+.lab_content_box h2{flex: 1 0 100%; font-size: 36px; text-align: center; margin-bottom: -88px;}
+.lab_content_box p{flex: 1 0 581px; font-size: 16px; line-height: 160%;}
+.lab_content_box div.img{flex: 1 1 704px; height: 457px; background-color: blue;}
+
+
+
+.main_first {background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_first h3{font-size: 36px; color: var(--title-color); font-weight: bold;display: inline-block; margin-bottom: 68px;}
+.main_first span{font-size: 24px; margin-left: 30px;}
+.main_first .item_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(336px,auto));
+    grid-auto-rows: minmax(354px, auto);
+    gap: 32px;
+}
+.main_first .item_container .item {border: #7fbe36 3px solid}
+.main_first .item_container .item:nth-child(1){
+    grid-column: auto / span 2;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(2){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(3){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(4){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(5){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(6){
+    grid-column: auto / span 2;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 1153px) {
+    .main_first .item_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(354px, auto);
+        gap: 32px;
+    }
+    .main_first .item_container .item:nth-child(1){
+        order: 1;
+    }
+    .main_first .item_container .item:nth-child(2){
+        order: 2;
+    }
+    .main_first .item_container .item:nth-child(3){
+        order: 3;
+    }
+    .main_first .item_container .item:nth-child(4){
+        order: 5;
+    }
+    .main_first .item_container .item:nth-child(5){
+        order: 6;
+    }
+    .main_first .item_container .item:nth-child(6){
+        order: 4;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .mid_content_box:nth-of-type(2) h2{padding-left: 0px;}
+}

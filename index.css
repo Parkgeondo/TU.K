@@ -1,0 +1,279 @@
+:root {
+    --third-color: #757575; 
+    --four-color: #424242; 
+    --five-color: #212121; 
+}
+
+@font-face {
+    font-family: 'nanum_Regular';
+    src: url('./nanum-barun-gothic/NanumBarunGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nanum_Bold';
+    src: url('./nanum-barun-gothic/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nanum_Light';
+    src: url('./nanum-barun-gothic/NanumBarunGothicLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'nanum_UltraLight';
+    src: url('/nanum-barun-gothic/NanumBarunGothicUltraLight.ttf') format('truetype');
+}
+
+body {
+    font-family: 'nanum_Regular';
+  }
+
+/*메뉴바*/
+
+header {
+    height: 1100px !important;
+    background:linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0) 10%,
+        rgba(20, 20, 20, 0.25) 25%,
+        rgba(20, 20, 20, 0.5) 50%,
+        rgba(20, 20, 20, 0.75) 75%,
+        rgba(20, 20, 20, 1) 100%
+    ), url(img/header_1.png);
+}
+
+/*제일 위에 있는 이미지*/
+
+header .hero{
+	width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-20px);
+}
+
+header .hero h1{
+    font-size: 64px;
+    color: var(--white-color);
+}
+
+header .hero div{
+    width: 218px;
+    height: 4px;
+    background: linear-gradient( to right, var(--key-color), var(--key-color3), var(--key-color2) );
+    margin-left: 12px;
+    margin-top: 24px;
+}
+
+header .hero p{
+    font-size: 16px;
+    color: lightgrey;
+    line-height: 240%;
+    margin-top: 54px;
+    margin-left: 10px;
+}
+
+/*학교교수진연구실적홍보*/
+
+main {
+    max-width: 1504px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_first {background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_first h3{font-size: 36px; color: var(--title-color); font-weight: bold;display: inline-block; margin-bottom: 68px;}
+.main_first span{font-size: 24px; margin-left: 30px;}
+.main_first .item_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(336px,auto));
+    grid-auto-rows: minmax(354px, auto);
+    gap: 32px;
+}
+.main_first .item_container .item {border: #7fbe36 3px solid}
+.main_first .item_container .item:nth-child(1){
+    grid-column: auto / span 2;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(2){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(3){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(4){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(5){
+    grid-column: auto / span 1;
+    background-color: antiquewhite;
+}
+.main_first .item_container .item:nth-child(6){
+    grid-column: auto / span 2;
+    background-color: antiquewhite;
+}
+
+@media screen and (max-width: 1153px) {
+    .main_first .item_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(354px, auto);
+        gap: 32px;
+    }
+    .main_first .item_container .item:nth-child(1){
+        order: 1;
+    }
+    .main_first .item_container .item:nth-child(2){
+        order: 2;
+    }
+    .main_first .item_container .item:nth-child(3){
+        order: 3;
+    }
+    .main_first .item_container .item:nth-child(4){
+        order: 5;
+    }
+    .main_first .item_container .item:nth-child(5){
+        order: 6;
+    }
+    .main_first .item_container .item:nth-child(6){
+        order: 4;
+    }
+}
+
+
+/*수상실적*/
+
+.main_second{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_second h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
+.student_award_wrap{}
+.student_award_item{display: flex; gap: 38px; margin-bottom: 120px;}
+.student_award_item .img{}
+.student_award_info { }
+.student_award_info .student_award_title {display: flex; justify-content: space-between; align-items: center;}
+.student_award_info h4{font-size: 48px; line-height: 160%;}
+.student_award_info .name{font-size: 24px;
+    color: var(--four-color);}
+.student_award_info p{font-size: 18px; line-height: 145%; color: var(--four-color); margin-bottom: 32px;}
+.student_award_info .award_info{ font-size: 14px; line-height: 160%; color: var(--third-color);}
+.float_left{float: left;}
+.float_right{float: right;}
+
+/*짝수 콘텐츠만 왼쪽 플롯하는 CSs*/
+.student_award_wrap:nth-child(2n-1) .student_award_item{flex-direction: row-reverse;}
+
+/*졸업생 갤러리*/
+.main_third{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_third h3{font-size: 36px; margin-bottom: 68px;}
+
+.main_third .item_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(336px,auto));
+    grid-auto-rows: minmax(230px, auto);
+    gap: 32px;
+}
+.main_third .item_container .item {
+    border: #7fbe36 3px solid;
+    background-color: antiquewhite;
+}
+.main_third .item_container .item:nth-child(1){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(2){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(3){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(4){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(5){
+    grid-column: auto / span 2;
+    grid-row: auto / span 2;
+}
+.main_third .item_container .item:nth-child(6){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(7){
+    grid-column: auto / span 1;
+}
+.main_third .item_container .item:nth-child(8){
+    grid-column: auto / span 1;
+}
+
+/*산학협력*/
+
+/*창업지원본부*/
+.main_four{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_four h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
+.main_four .cooperation_wrap{}
+.main_four .cooperation_wrap .cooperation_item{margin-bottom: 60px;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap{display: flex; gap: 33px;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption{}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption h4{font-size: 28px; color: var(--five-color); margin-bottom: 52px;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption p{font-size: 14px; line-height:140%;}
+
+
+/*산학협력단*/
+.main_four .cooperation_wrap .cooperation2_wrap {display: flex; flex-wrap: wrap; gap: 33px;}
+.main_four .cooperation_wrap h4{ font-size: 28px; margin-bottom: 32px; color: var(--five-color);}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item{flex: 1;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item .cooperation_img{width: 100%; height: 252px;} 
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_1 .cooperation_img{background-image: url(img/cooperation/산학협력단1.png);}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_2 .cooperation_img{background-image: url(img/cooperation/산학협력단2.png);}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_3 .cooperation_img{background-image: url(img/cooperation/산학협력단3.png);}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption{height: 200px; background-color: violet; display: flex; flex-direction: column; justify-content: space-between;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption p{font-size: 14px; line-height: 160%;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption button{width: 165px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px;}
+
+/*협력 기업체*/
+/*캐러셀*/
+.main_five{margin-top: 100px; position: relative; overflow: hidden; height: 600px;}
+.main_five h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color); margin-left:240px;}
+.main_five .carousel-wrapper{border: springgreen solid 1px; overflow: hidden;}
+.main_five .carousel-wrapper .carousel{
+    display: flex;
+    transform: translate3d(0, 0, 0); 
+    transition: 0.2s;
+    background-color: yellow;
+    position: absolute;
+    left: calc(50vw - 668px);
+}
+.main_five .carousel-wrapper .carousel .carousel_item{border: 1px solid; width: 1194px; height: 422px; margin: 0px 68px 0px 68px; box-shadow: 0px 4px 24px #0000002f;}
+.main_five .carousel-wrapper .carousel .carousel_item figure{ display: flex; background-color: rgb(255, 255, 255); width: 100%; height: 100%;}
+.main_five .carousel-wrapper .carousel .carousel_item figure .carousel_item_img{
+    width: 597px;
+    height: 422px;
+    background-color: yellowgreen;
+    background-position: center;
+    background-size: cover;
+} 
+.main_five .carousel-wrapper .carousel .carousel_item:nth-child(1) figure .carousel_item_img {background-image: url(img/caresel/image1.png);}
+.main_five .carousel-wrapper .carousel .carousel_item:nth-child(2) figure .carousel_item_img {background-image: url(img/caresel/image2.png);}
+.main_five .carousel-wrapper .carousel .carousel_item:nth-child(3) figure .carousel_item_img {background-image: url();}
+
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption{padding: 50px;} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption h6{font-size: 20px; color: var(--four-color);} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p{font-size: 20px; color: var(--five-color); margin-top: 20px;} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(1) span{color: var(--third-color);}
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption h2{font-size: 48px; line-height: 120%; margin: 50px 0px 22px 0px; color: var(--five-color);} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(2){font-size: 18px; line-height: 145%; color:var(--five-color);} 
+
+.main_five  button{position: absolute; 
+    width: 100px; 
+    height: 100px; 
+    background-color: #212121; 
+    border-radius: 50%; 
+    border: none; 
+    color: white; top:300px;
+    opacity: 50%;
+    background-repeat: no-repeat;
+
+} 
+.main_five .prev{left: 200px; background-image: url(img/caresel/prev.svg); background-position: 40% 50%;} 
+.main_five .next{right: 200px; background-image: url(img/caresel/next.svg); background-position: 60% 50%;} 
+
+
+/*협력 기업체 협력 지원*/

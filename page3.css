@@ -1,0 +1,85 @@
+
+/*학교교수진연구실적홍보 첫번째 소개 페이지*/
+
+main {
+    max-width: 1504px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    height: 700px !important;
+}
+
+.tab-inner {}
+.tabs {
+    top: 0;
+    left: 0;
+    height: 700px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+.items {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.items div {
+    height: 100%;
+    width: 33.33333%;
+    float: left;
+}
+
+.items div:nth-child(1){
+    background-image: url(img/교수님\ 캐러셀_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.items div:nth-child(2){
+    background-image: url(img/교수님\ 캐러셀_2.jpg);
+}
+.items div:nth-child(3){
+    background-image: url(img/교수님\ 캐러셀_3.jpg);
+}
+
+input[name=tabmenu] {
+    display: none;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+}
+.btn label {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #c4c4c4c4;
+    cursor: pointer;
+}
+
+input[id=tab1]:checked ~ .tabs .items {
+    left: 0;
+}
+input[id=tab2]:checked ~ .tabs .items {
+    left: -100%;
+}
+input[id=tab3]:checked ~ .tabs .items {
+    left: -200%;
+}
+
+input[id=tab1]:checked ~ .btn label[for=tab1] {
+    background: chartreuse;
+}
+
+input[id=tab2]:checked ~ .btn label[for=tab2] {
+    background: chartreuse;
+}
+
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+    background: chartreuse;
+}
