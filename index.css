@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'nanum_Regular';
+    font-family: 'NanumBarunGothic';
   }
 
 /*메뉴바*/
@@ -232,21 +232,19 @@ main {
 /*캐러셀*/
 .main_five{margin-top: 100px; position: relative; overflow: hidden; height: 600px;}
 .main_five h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color); margin-left:240px;}
-.main_five .carousel-wrapper{border: springgreen solid 1px; overflow: hidden;}
+.main_five .carousel-wrapper{overflow: hidden;}
 .main_five .carousel-wrapper .carousel{
     display: flex;
     transform: translate3d(0, 0, 0); 
     transition: 0.2s;
-    background-color: yellow;
     position: absolute;
     left: calc(50vw - 668px);
 }
-.main_five .carousel-wrapper .carousel .carousel_item{border: 1px solid; width: 1194px; height: 422px; margin: 0px 68px 0px 68px; box-shadow: 0px 4px 24px #0000002f;}
+.main_five .carousel-wrapper .carousel .carousel_item{width: 1194px; height: 422px; margin: 0px 68px 0px 68px; box-shadow: 0px 4px 24px #0000002f;}
 .main_five .carousel-wrapper .carousel .carousel_item figure{ display: flex; background-color: rgb(255, 255, 255); width: 100%; height: 100%;}
 .main_five .carousel-wrapper .carousel .carousel_item figure .carousel_item_img{
     width: 597px;
     height: 422px;
-    background-color: yellowgreen;
     background-position: center;
     background-size: cover;
 } 
@@ -254,14 +252,15 @@ main {
 .main_five .carousel-wrapper .carousel .carousel_item:nth-child(2) figure .carousel_item_img {background-image: url(img/caresel/image2.png);}
 .main_five .carousel-wrapper .carousel .carousel_item:nth-child(3) figure .carousel_item_img {background-image: url();}
 
-.main_five .carousel-wrapper .carousel .carousel_item figure figcaption{padding: 50px;} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption{padding: 50px 0px 0px 50px;} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption h6{font-size: 20px; color: var(--four-color);} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption p{font-size: 20px; color: var(--five-color); margin-top: 20px;} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(1) span{color: var(--third-color);}
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption h2{font-size: 48px; line-height: 120%; margin: 50px 0px 22px 0px; color: var(--five-color);} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(2){font-size: 18px; line-height: 145%; color:var(--five-color);} 
 
-.main_five  button{position: absolute; 
+.main_five  button{
+    position: absolute; 
     width: 100px; 
     height: 100px; 
     background-color: #212121; 
@@ -270,10 +269,43 @@ main {
     color: white; top:300px;
     opacity: 50%;
     background-repeat: no-repeat;
-
 } 
 .main_five .prev{left: 200px; background-image: url(img/caresel/prev.svg); background-position: 40% 50%;} 
 .main_five .next{right: 200px; background-image: url(img/caresel/next.svg); background-position: 60% 50%;} 
 
 
 /*협력 기업체 협력 지원*/
+.main_six {margin-top: 80px;}
+.main_six h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
+.main_six figure{display: flex; gap: 154px;}
+.main_six figure .img{width: 827px; height: 425px; background-image:url(img/cooperation2/image\ 1.png);}
+.main_six figure figcaption{ flex: 1 0;}
+.main_six figure figcaption h4{font-size: 28px; line-height: 160%; margin-bottom: 52px; color: var(--five-color);}
+.main_six figure figcaption p{font-size: 14px; line-height: 160%; color: var(--four-color);}
+.main_six figure figcaption button{
+    margin-top: 96px;
+    width: 200px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px;
+}
+
+/*EH 연구소 소개*/
+.main_seven {margin-top: 146px;}
+.main_seven h3{font-size: 36px; line-height: 160%; margin-bottom: 68px;}
+.main_seven .lab_wrap {display: flex; height: 386px; gap: 32px;}
+.main_seven .lab_wrap .lab_item{position: relative; flex: 1 0; box-shadow: 0px 4px 24px #0000002f; padding: 32px; display: flex; flex-direction: column; justify-content: space-between;} 
+.main_seven .lab_wrap .lab_item .lab_title{}
+.main_seven .lab_wrap .lab_item .lab_title h5{font-size: 28px; color: var(--four-color); margin-bottom: 18px;}
+.main_seven .lab_wrap .lab_item .lab_title span:nth-child(2){ padding: 2px 8px 2px 8px; margin-right: 12px; border: 1px solid var(--four-color); font-size: 14px; line-height: 160%; color: var(--four-color);}
+.main_seven .lab_wrap .lab_item .lab_title span:nth-child(3){font-size: 14px; line-height: 160%; margin-right: 12px; color: var(--four-color);}
+.main_seven .lab_wrap .lab_item .lab_title span:nth-child(4){font-size: 14px; line-height: 160%; margin-right: 12px; color: var(--four-color);}
+.main_seven .lab_wrap .lab_item .lab_info{display: flex; height: 60%;}
+.main_seven .lab_wrap .lab_item .lab_info div:nth-child(1){border-right: 1px solid #d4d4d4; padding-right: 24px;}
+.main_seven .lab_wrap .lab_item .lab_info div:nth-child(2){padding-left: 24px;}
+.main_seven .lab_wrap .lab_item .lab_info div h6{font-size: 16px; font-weight: 900; line-height: 160%; color: var(--four-color); margin-bottom: 16px;}
+.main_seven .lab_wrap .lab_item .lab_info div p{color: var(--third-color); margin-bottom: 4px;}
+
+
+.lab_button {position: absolute; right: 0; bottom: 0; width: 131px; height: 88px; border: none; background-color: var(--four-color); background-image: url(img/icon/right_button.svg); background-position: center; background-repeat: no-repeat;}
+
+
+/*올라가는 버튼*/
+.up{position: fixed; right: 128px; bottom: 50px; width: 40px; height: 40px; background-color: var(--third-color); background-image: url(img/icon/up.svg); background-repeat: no-repeat; background-position: center; border: none; background-size: 70%;}
