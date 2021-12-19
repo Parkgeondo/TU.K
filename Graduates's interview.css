@@ -122,10 +122,13 @@ main{
 	color: #EA7224;
 }
 
+/*라인조절*/
+.item p {line-height: 160%;}
 /*본문*/
 
 .right{
 	display: flex;
+	color: #212121;
 	flex-direction: column;
 	margin-left: 22%;
 }
