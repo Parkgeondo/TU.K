@@ -107,8 +107,8 @@ header nav .User_Service {
 }
 
 /*utility*/
-.utility li:nth-child(1){transform: translateY(5px);}
-.utility li:nth-child(2){transform: translateY(6px);}
+.navigationbox .utility li:nth-child(1){transform: translateY(5px);}
+.navigationbox .utility li:nth-child(2){transform: translateY(6px);}
 
 
 /*위쪽 메뉴 배경 만들어지는 애니메이션(박건도 추가)*/
@@ -513,7 +513,6 @@ footer .logobox{
 footer .logobox div{
     width: 100%;
     height: 50px;
-    border: var(--white-color) solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -548,6 +547,7 @@ footer .Footer_navigation ul li a{
 footer .Footer_navigation .company{
     font-size: 0.88em;
     color: var(--white-color);
+    line-height: 160%;
 }
 
 footer .rightcontent{
@@ -564,4 +564,8 @@ footer .rightcontent ul{
 
 footer .rightcontent ul li{
     margin-right: 16px;
+}
+
+footer .logobox .logo{
+    width: 100px;
 }
