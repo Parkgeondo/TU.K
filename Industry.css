@@ -1,0 +1,205 @@
+.page_title{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	text-align: center;
+}
+.page_title h1{
+	font-size: 36px;
+}
+.page_title p{
+	margin-top: 30px;
+	font-size: 20px;
+	line-height: 160%;
+}
+
+.hero{
+	background-image: url(img/industry/hero.jpg);
+	width: 100%;
+	height: 1176px;
+	position: absolute;
+	margin-top: -50px;
+	z-index: -1;
+}
+.container{
+	margin-top: 50px;
+}
+.container .a, .container .b, .container .c, .container .d{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 334px);
+	margin-top: 100px;
+	gap: 32px;
+}
+.container .a h2, .container .b h2, .container .c h2, .container .d h2{
+	font-size: 36px;
+}
+.container .a p, .container .b p, .container .c p, .container .d p{
+	font-size: 18px;
+	line-height: 160%;
+}
+.subtitle{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 40px;
+}
+.subtitle a{
+	color: black;
+	text-decoration: underline;
+}
+/*창업지원본부*/
+
+.container .a .item:nth-child(1){
+	grid-column: 1/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/a1.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .a .item:nth-child(2){
+	grid-column: 2/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/a2.jpg);
+	background-size: cover;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .a .item:nth-child(3){
+	grid-column: 1/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/a3.jpg);
+	background-size: cover;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .a .item:nth-child(4){
+	grid-column: 2/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/a4.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .a .item:nth-child(5){
+	grid-column: 3/span 2;
+	grid-row: 1/span 2;
+}
+
+
+/*산학협력단*/
+
+.container .b .item:nth-child(1){
+	grid-column: 3/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/b1.png);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .b .item:nth-child(2){
+	grid-column: 4/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/b2.png);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .b .item:nth-child(3){
+	grid-column: 3/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/b3.png);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .b .item:nth-child(4){
+	grid-column: 4/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/b4.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .b .item:nth-child(5){
+	grid-column: 1/span 2;
+	grid-row: 1/span 2;
+}
+
+
+/*LINC+ 사업단*/
+
+.container .c .item:nth-child(1){
+	grid-column: 1/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/c1.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .c .item:nth-child(2){
+	grid-column: 2/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/c2.jpg);
+	background-size: cover;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .c .item:nth-child(3){
+	grid-column: 1/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/c3.jpg);
+	background-size: cover;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .c .item:nth-child(4){
+	grid-column: 2/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/c4.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .c .item:nth-child(5){
+	grid-column: 3/span 2;
+	grid-row: 1/span 2;
+}
+
+
+/*BK21+*/
+
+.container .d .item:nth-child(1){
+	grid-column: 3/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/d1.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .d .item:nth-child(2){
+	grid-column: 4/span 1;
+	grid-row: 1/span 1;
+	background-image: url(img/industry/d2.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .d .item:nth-child(3){
+	grid-column: 3/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/d3.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .d .item:nth-child(4){
+	grid-column: 4/span 1;
+	grid-row: 2/span 1;
+	background-image: url(img/industry/d4.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 0px 2px 4px #00000079;
+}
+.container .d .item:nth-child(5){
+	grid-column: 1/span 2;
+	grid-row: 1/span 2;
+}

@@ -1,0 +1,259 @@
+*{margin: 0}
+
+.company{
+	display: flex;
+	justify-content: center;
+/*	padding-top: 100px;*/
+	position: relative;
+	z-index: 0;
+}
+.backgroundimg{
+	z-index: -1;
+	width: 100vw;
+	height: 791px;
+	position: absolute;
+	top: 0;
+	background: url(img/companyimg/background.png) center center;
+	transform: translateY(-30px);
+}
+.container{
+	display: grid;
+	width: 1440px;
+	grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, minmax(20px, auto));
+    gap: 10px 32px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    color: #424242;
+}
+
+
+/*교내 협력 기업체 소개*/
+
+.item:nth-child(1){
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 4;
+	grid-column-end: 10;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.content1{
+	text-align: center;
+}
+.content1 h1{
+	font-size: 3em;
+	margin-bottom: 23px;
+}
+.content1 p{
+	font-size: 1.25em;
+}
+
+
+/*비타민 이메지네이션*/
+
+.item:nth-child(2){
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 7;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 120px;
+}
+
+.content2{
+	width: 100%;
+	height: 456px;
+}
+.content2 h1{
+	font-size: 6em;
+	font-weight: bold;
+	color: #212121;
+}
+.content2 p{
+	font-size: 1.1em;
+	font-weight: 200;
+	color: #212121;
+	line-height: 160%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.content2 li{
+	font-size: 1.1em;
+	font-weight: 200;
+	color: #212121;
+}
+
+
+.item:nth-child(3){
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 7;
+	grid-column-end: 13;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 120px;
+}
+
+.content3{
+	width: 100%;
+	height: 786px;
+	background: url(img/companyimg/bigimg.png);
+}
+
+.item:nth-child(4){
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 107px;
+}
+
+.item:nth-child(5){
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 4;
+	grid-column-end: 7;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 107px;
+}
+
+.content4{
+	width: 100%;
+	height: 223px;
+}
+
+.content4 h1{
+	font-size: 3em;
+	font-weight: bold;
+	color: #0042A0;
+}
+
+.content4 p{
+	font-size: 1.1em;
+	font-weight: 300;
+	color: #424242;
+	margin-top: 10px;
+}
+
+/*제품소개*/
+
+.item:nth-child(6){
+	grid-row-start: 4;
+	grid-row-end: 5;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 77px;
+}
+
+.content5{
+	width: 100%;
+	height: 669px;
+	border-top: solid 1px #BDBDBD;
+	border-bottom: solid 1px #BDBDBD;
+	display: flex;
+}
+.content5 div{
+	width: 336px;
+	height: 100%;
+	text-align: center;
+}
+.content5 div:not(:last-of-type){
+	margin-right: 32px;
+}
+.content5 div img{
+	margin-top: 136px;
+	margin-bottom: 24px;
+}
+.content5 div h1{
+	font-size: 2.25em;
+	font-weight: bold;
+	color: #212121;
+	margin-bottom: 10px;
+	line-height: 160%;
+}
+
+.content5 div p{
+	font-size: 1.em;
+	font-weight: 300;
+	color: #757575;
+	text-align: left;
+	line-height: 145%;
+}
+
+/*협력체 정보*/
+
+.item:nth-child(7){
+	grid-row-start: 5;
+	grid-row-end: 6;
+	grid-column-start: 1;
+	grid-column-end: 13;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-top: 62px;
+}
+
+.content6{
+	width: 100%;
+	height: 175px;
+	display: flex;
+}
+.content6 div h1{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #212121;
+	margin-bottom: 16px;
+	line-height: 160%;
+}
+.content6 div p{
+	font-size: 0.88em;
+	font-weight: 300;
+	color: #757575;
+	line-height: 160%;
+}
+.content6 div li{
+	font-size: 0.88em;
+	font-weight: 300;
+	color: #757575;
+	margin-top: 4px;
+}
+.content6 div li a{
+	text-decoration: none;
+	color: #757575;
+	transition: all 0.3s;
+}
+.content6 div li a:hover{
+	opacity: 0.4;
+}
+.content6 div:nth-child(1){
+	width: 336px;
+	height: 100%;
+	margin-right: 155px;
+}
+.content6 div:nth-child(2){
+	width: 213px;
+	height: 100%;
+	margin-right: 77px;
+}
+.content6 div:nth-child(3){
+	width: 168px;
+	height: 100%;
+	margin-right: 155px;
+}
+.content6 div:nth-child(4){
+	width: 336px;
+	height: 100%;
+}

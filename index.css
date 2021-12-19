@@ -1,7 +1,7 @@
 :root {
     --third-color: #757575; 
     --four-color: #424242; 
-    --five-color: #212121; 
+    --five-color: #212121;
 }
 
 @font-face {
@@ -49,6 +49,7 @@ header .hero{
     margin-left: auto;
     margin-right: auto;
     transform: translateY(-20px);
+    padding: 0px 32px;
 }
 
 header .hero h1{
@@ -80,40 +81,116 @@ main {
     margin-right: auto;
 }
 
-.main_first {background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
-.main_first h3{font-size: 36px; color: var(--title-color); font-weight: bold;display: inline-block; margin-bottom: 68px;}
+.main_first { margin-top: 100px; padding: 0px 32px 0px 32px;}
+.main_first h3{font-size: 36px; color: var(--five-color); font-weight: bold;display: inline-block; margin-bottom: 68px;}
 .main_first span{font-size: 24px; margin-left: 30px;}
 .main_first .item_container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(336px,auto));
     grid-auto-rows: minmax(354px, auto);
     gap: 32px;
+    
 }
-.main_first .item_container .item {border: #7fbe36 3px solid}
-.main_first .item_container .item:nth-child(1){
+.main_first .item_container .item {background-position: center; background-size: cover; background-repeat: no-repeat; box-shadow: 0px 2px 4px #00000079; transition: all 0.2s ease-in-out; overflow: hidden; }
+.main_first .item_container .item figure{background-position: center; background-size: cover; background-repeat: no-repeat; transition: all 0.2s ease-in-out;}
+.main_first .item_container .item:nth-child(1),
+.main_first .item_container .item:nth-child(6) {
+    position: relative;
+    padding: 30px;
     grid-column: auto / span 2;
-    background-color: antiquewhite;
+    z-index: 0;
+    
 }
-.main_first .item_container .item:nth-child(2){
-    grid-column: auto / span 1;
-    background-color: antiquewhite;
+
+/*호버 이펙트*/
+.main_first .item_container .item:hover{
+    box-shadow: 0px 6px 20px #0000002f;
 }
-.main_first .item_container .item:nth-child(3){
-    grid-column: auto / span 1;
-    background-color: antiquewhite;
+.main_first .item_container .item:hover > figure{
+    transform: scale(106%); transition: all 0.2s ease-in-out;
 }
-.main_first .item_container .item:nth-child(4){
-    grid-column: auto / span 1;
-    background-color: antiquewhite;
+.main_first .item_container .item:nth-child(1):hover{
+    transform: scale(102%);
 }
-.main_first .item_container .item:nth-child(5){
-    grid-column: auto / span 1;
-    background-color: antiquewhite;
+.main_first .item_container .item:nth-child(6):hover{
+    transform: scale(102%);
+}
+
+
+
+.main_first .item_container .item:nth-child(1) span,
+.main_first .item_container .item:nth-child(6) span{
+    font-size: 18px; color: white; margin-left: 0px; z-index: 10;
+    bottom: 110px; position: absolute;
+}
+
+.main_first .item_container .item:nth-child(1) p,
+.main_first .item_container .item:nth-child(6) p{
+    font-size: 28px; color: white; font-weight: 900; z-index: 10;
+    bottom: 30px; position: absolute;
+}
+
+
+.main_first .item_container .item:nth-child(1)::after,
+.main_first .item_container .item:nth-child(6)::after{
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.308) 0%,rgba(0, 0, 0, 0.89) 100%);
+    z-index: -1;
+}
+
+.main_first .item_container .item:nth-child(1){
+    background-image: url(img/professor_img/1.png);
 }
 .main_first .item_container .item:nth-child(6){
-    grid-column: auto / span 2;
-    background-color: antiquewhite;
+    background-image: url(img/professor_img/6.png); 
 }
+
+
+.main_first .item_container .item:nth-child(2),
+.main_first .item_container .item:nth-child(3),
+.main_first .item_container .item:nth-child(4),
+.main_first .item_container .item:nth-child(5),{
+    grid-column: auto / span 1; 
+}
+.main_first .item_container .item:nth-child(2) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/2.png);
+}
+.main_first .item_container .item:nth-child(3) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/3.png);
+}
+.main_first .item_container .item:nth-child(4) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/4.png);
+}
+.main_first .item_container .item:nth-child(5) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/5.png);
+}   
+
+
+
+.main_first .item_container .item:nth-child(2) figcaption,
+.main_first .item_container .item:nth-child(3) figcaption,
+.main_first .item_container .item:nth-child(4) figcaption,
+.main_first .item_container .item:nth-child(5) figcaption{
+    height: 124px; background-color: white; padding: 30px;
+}
+.main_first .item_container .item:nth-child(2) figcaption span,
+.main_first .item_container .item:nth-child(3) figcaption span,
+.main_first .item_container .item:nth-child(4) figcaption span,
+.main_first .item_container .item:nth-child(5) figcaption span{
+    font-size: 18px; color: var(--four-color); margin-left: -0px;
+}
+.main_first .item_container .item:nth-child(2) figcaption p,
+.main_first .item_container .item:nth-child(3) figcaption p,
+.main_first .item_container .item:nth-child(4) figcaption p,
+.main_first .item_container .item:nth-child(5) figcaption p{
+    font-size: 20px; color: var(--five-color); font-weight: 900; margin-top: 12px;
+}
+
 
 @media screen and (max-width: 1153px) {
     .main_first .item_container{
@@ -140,19 +217,21 @@ main {
     .main_first .item_container .item:nth-child(6){
         order: 4;
     }
+    
 }
+
 
 
 /*수상실적*/
 
-.main_second{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_second{margin-top: 160px; padding: 0 32px 0 32px;}
 .main_second h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
 .student_award_wrap{}
 .student_award_item{display: flex; gap: 38px; margin-bottom: 120px;}
-.student_award_item .img{}
-.student_award_info { }
+.student_award_item img{}
+.student_award_info {}
 .student_award_info .student_award_title {display: flex; justify-content: space-between; align-items: center;}
-.student_award_info h4{font-size: 48px; line-height: 160%;}
+.student_award_info h4{font-size: 48px; line-height: 160%; margin-bottom: 12px;}
 .student_award_info .name{font-size: 24px;
     color: var(--four-color);}
 .student_award_info p{font-size: 18px; line-height: 145%; color: var(--four-color); margin-bottom: 32px;}
@@ -160,11 +239,47 @@ main {
 .float_left{float: left;}
 .float_right{float: right;}
 
+
+@media screen and (max-width: 1153px) {
+    .student_award_item{flex-wrap: wrap;}
+    .student_award_item img{width: 91vw;}
+}
+
+
+/*수상실적 호버*/
+.hover_anime {position: relative;}
+
+.hover_anime::before, .hover_anime::after {
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:95%;
+    height: 92%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+.hover_anime::before {
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    width:0;
+}
+.hover_anime::after {
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    height:0;
+}
+
+.hover_anime:hover::before {width:95.4%}
+.hover_anime:hover::after {height:92.5%}
+
+
+
 /*짝수 콘텐츠만 왼쪽 플롯하는 CSs*/
 .student_award_wrap:nth-child(2n-1) .student_award_item{flex-direction: row-reverse;}
 
 /*졸업생 갤러리*/
-.main_third{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_third{margin-top: 100px; padding: 0 32px 0 32px;}
 .main_third h3{font-size: 36px; margin-bottom: 68px;}
 
 .main_third .item_container{
@@ -174,8 +289,10 @@ main {
     gap: 32px;
 }
 .main_third .item_container .item {
-    border: #7fbe36 3px solid;
-    background-color: antiquewhite;
+    overflow: hidden; transition: all 0.3s ease-in-out; background-color: magenta;
+}
+.main_third .item_container .item>img{
+    height: 100%; transition: all 0.2s ease-in-out; width: 100%;
 }
 .main_third .item_container .item:nth-child(1){
     grid-column: auto / span 1;
@@ -202,35 +319,53 @@ main {
 .main_third .item_container .item:nth-child(8){
     grid-column: auto / span 1;
 }
+.main_third .item_container .item:nth-child(9){
+    grid-column: auto / span 1;
+}
+/*졸업생 갤러리 호버시*/
+.main_third .item_container .item:hover > img{
+    transform: scale(106%);
+}
+
+
+
 
 /*산학협력*/
 
 /*창업지원본부*/
-.main_four{background-color: #F86C1E;margin-top: 100px; padding: 0 32px 0 32px;}
+.main_four{margin-top: 160px; padding: 0 32px 0 32px;}
 .main_four h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
 .main_four .cooperation_wrap{}
 .main_four .cooperation_wrap .cooperation_item{margin-bottom: 60px;}
-.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap{display: flex; gap: 33px;}
-.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption{}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap{display: flex; gap: 33px; flex-wrap: wrap;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap img{flex: 1 1 400px;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption{flex: 1 0 400px;}
 .main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption h4{font-size: 28px; color: var(--five-color); margin-bottom: 52px;}
-.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption p{font-size: 14px; line-height:140%;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption p{font-size: 14px; line-height:160%;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption button{width: 165px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px; margin-top: 33px; cursor: pointer; transition: all 0.3s;}
+.main_four .cooperation_wrap .cooperation_item .cooperation1_wrap figcaption button:hover{background-color: #EA7224;}
 
 
 /*산학협력단*/
 .main_four .cooperation_wrap .cooperation2_wrap {display: flex; flex-wrap: wrap; gap: 33px;}
 .main_four .cooperation_wrap h4{ font-size: 28px; margin-bottom: 32px; color: var(--five-color);}
 .main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item{flex: 1;}
-.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item .cooperation_img{width: 100%; height: 252px;} 
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item .cooperation_img{width: 100%; height: 252px; margin-bottom: 32px;} 
 .main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_1 .cooperation_img{background-image: url(img/cooperation/산학협력단1.png);}
 .main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_2 .cooperation_img{background-image: url(img/cooperation/산학협력단2.png);}
 .main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item_3 .cooperation_img{background-image: url(img/cooperation/산학협력단3.png);}
-.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption{height: 200px; background-color: violet; display: flex; flex-direction: column; justify-content: space-between;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption{height: 200px; display: flex; flex-direction: column; justify-content: space-between;}
 .main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption p{font-size: 14px; line-height: 160%;}
-.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption button{width: 165px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption button{width: 165px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px; cursor: pointer; transition: all 0.2s;}
+.main_four .cooperation_wrap .cooperation2_wrap .cooperation2_item figcaption button:hover{background-color: #EA7224;}
+@media screen and (max-width: 1153px) {
+    .main_four .cooperation_wrap .cooperation_item .cooperation1_wrap img{width: 91vw;}
+}
+
 
 /*협력 기업체*/
-/*캐러셀*/
-.main_five{margin-top: 100px; position: relative; overflow: hidden; height: 600px;}
+/*캐러셀*//*패딩40*/
+.main_five{margin-top: 0px; position: relative; overflow: hidden; height: 700px; background-color: #FAFAFA; padding: 70px 0px 0px 0px;}
 .main_five h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color); margin-left:240px;}
 .main_five .carousel-wrapper{overflow: hidden;}
 .main_five .carousel-wrapper .carousel{
@@ -250,15 +385,16 @@ main {
 } 
 .main_five .carousel-wrapper .carousel .carousel_item:nth-child(1) figure .carousel_item_img {background-image: url(img/caresel/image1.png);}
 .main_five .carousel-wrapper .carousel .carousel_item:nth-child(2) figure .carousel_item_img {background-image: url(img/caresel/image2.png);}
-.main_five .carousel-wrapper .carousel .carousel_item:nth-child(3) figure .carousel_item_img {background-image: url();}
+.main_five .carousel-wrapper .carousel .carousel_item:nth-child(3) figure .carousel_item_img {background-image: url(img/caresel/theVC_founder.jpg);}
 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption{padding: 50px 0px 0px 50px;} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption h6{font-size: 20px; color: var(--four-color);} 
-.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p{font-size: 20px; color: var(--five-color); margin-top: 20px;} 
-.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(1) span{color: var(--third-color);}
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p{font-size: 20px; color: var(--five-color); margin-top: 20px; line-height: 160%;} 
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(1) {color: var(--five-color); font-weight: 900;}
+.main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(1) span {color: var(--third-color);}
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption h2{font-size: 48px; line-height: 120%; margin: 50px 0px 22px 0px; color: var(--five-color);} 
 .main_five .carousel-wrapper .carousel .carousel_item figure figcaption p:nth-child(2){font-size: 18px; line-height: 145%; color:var(--five-color);} 
-
+.Bold {font-weight: 900;}
 .main_five  button{
     position: absolute; 
     width: 100px; 
@@ -270,28 +406,36 @@ main {
     opacity: 50%;
     background-repeat: no-repeat;
 } 
-.main_five .prev{left: 200px; background-image: url(img/caresel/prev.svg); background-position: 40% 50%;} 
-.main_five .next{right: 200px; background-image: url(img/caresel/next.svg); background-position: 60% 50%;} 
+.main_five .prev{left: 8vw; top: 340px; background-image: url(img/caresel/prev.svg); background-position: 40% 50%;} 
+.main_five .next{right: 8vw; top: 340px; background-image: url(img/caresel/next.svg); background-position: 60% 50%;} 
 
 
 /*협력 기업체 협력 지원*/
-.main_six {margin-top: 80px;}
+.main_six {margin-top: 100px; padding: 0 33px;}/*캐러셀에서 30뺌*/
 .main_six h3{font-size:36px; margin-bottom:64px; line-height: 160%; color: var(--title-color);}
-.main_six figure{display: flex; gap: 154px;}
-.main_six figure .img{width: 827px; height: 425px; background-image:url(img/cooperation2/image\ 1.png);}
+.main_six figure{display: flex; gap: 33px;}
+.main_six figure .img{min-width: 827px; height: 425px; background-image:url(img/cooperation2/image\ 1.png); background-position: center; background-size: cover;}
 .main_six figure figcaption{ flex: 1 0;}
 .main_six figure figcaption h4{font-size: 28px; line-height: 160%; margin-bottom: 52px; color: var(--five-color);}
 .main_six figure figcaption p{font-size: 14px; line-height: 160%; color: var(--four-color);}
 .main_six figure figcaption button{
     margin-top: 96px;
-    width: 200px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px;
+    width: 200px; height: 48px; border: none; background-color: #0042A0; color: white; font-size: 18px; cursor: pointer; transition: all 0.3s;
+}
+.main_six figure figcaption button:hover{background-color: #EA7224;}
+
+@media screen and (max-width: 1153px) {
+    .main_six figure{flex-direction: column;}
 }
 
+
 /*EH 연구소 소개*/
-.main_seven {margin-top: 146px;}
-.main_seven h3{font-size: 36px; line-height: 160%; margin-bottom: 68px;}
+.gray_box {background-color: #EEEEEE; }
+
+.main_seven {margin-top: 100px; padding: 60px 32px 80px 32px;}
+.main_seven h3{font-size: 36px; line-height: 160%; margin-bottom: 68px; color: var(--five-color);}
 .main_seven .lab_wrap {display: flex; height: 386px; gap: 32px;}
-.main_seven .lab_wrap .lab_item{position: relative; flex: 1 0; box-shadow: 0px 4px 24px #0000002f; padding: 32px; display: flex; flex-direction: column; justify-content: space-between;} 
+.main_seven .lab_wrap .lab_item{position: relative; flex: 1 0; box-shadow: 0px 4px 24px #0000002f; padding: 32px; display: flex; flex-direction: column; justify-content: space-between; background-color: white;} 
 .main_seven .lab_wrap .lab_item .lab_title{}
 .main_seven .lab_wrap .lab_item .lab_title h5{font-size: 28px; color: var(--four-color); margin-bottom: 18px;}
 .main_seven .lab_wrap .lab_item .lab_title span:nth-child(2){ padding: 2px 8px 2px 8px; margin-right: 12px; border: 1px solid var(--four-color); font-size: 14px; line-height: 160%; color: var(--four-color);}
@@ -304,8 +448,7 @@ main {
 .main_seven .lab_wrap .lab_item .lab_info div p{color: var(--third-color); margin-bottom: 4px;}
 
 
-.lab_button {position: absolute; right: 0; bottom: 0; width: 131px; height: 88px; border: none; background-color: var(--four-color); background-image: url(img/icon/right_button.svg); background-position: center; background-repeat: no-repeat;}
-
+.lab_button {position: absolute; right: 0; bottom: 0; width: 131px; height: 88px; border: none; background-color: var(--four-color); background-image: url(img/icon/right_button.svg); background-position: center; background-repeat: no-repeat; cursor: pointer;}
 
 /*올라가는 버튼*/
 .up{position: fixed; right: 128px; bottom: 50px; width: 40px; height: 40px; background-color: var(--third-color); background-image: url(img/icon/up.svg); background-repeat: no-repeat; background-position: center; border: none; background-size: 70%;}

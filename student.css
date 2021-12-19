@@ -3,17 +3,17 @@
 .student{
 	display: flex;
 	justify-content: center;
-	padding-top: 100px;
+/*	padding-top: 100px;*/
 	position: relative;
 	z-index: 0;
 }
 .backgroundimg{
 	z-index: -1;
-	width: 100%;
+	width: 100vw;
 	height: 925px;
 	position: absolute;
 	top: 0;
-	background: url(img/background.png) center center;
+	background: url(img/studentimg/background.png) center center;
 }
 .container{
 	display: grid;
@@ -47,7 +47,7 @@
 	margin-bottom: 23px;
 }
 .content1 p{
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 /*연도 선택 기능*/
@@ -254,7 +254,7 @@ input[id="section"]:checked ~ .container #small{
 .allselect button span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorwhite.png);
+	background: url(img/studentimg/Vectorwhite.png);
 	background-size: cover;
 }
 .allselect h2{
@@ -291,7 +291,7 @@ input[id="ma"] + label{
 input[id="ma"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -337,7 +337,7 @@ input[id="chine"] + label{
 input[id="chine"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -384,7 +384,7 @@ input[id="meca"] + label{
 input[id="meca"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -431,7 +431,7 @@ input[id="elec"] + label{
 input[id="elec"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -478,7 +478,7 @@ input[id="compu"] + label{
 input[id="compu"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -525,7 +525,7 @@ input[id="game"] + label{
 input[id="game"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -572,7 +572,7 @@ input[id="life"] + label{
 input[id="life"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -619,7 +619,7 @@ input[id="nano"] + label{
 input[id="nano"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -666,7 +666,7 @@ input[id="energy"] + label{
 input[id="energy"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -713,7 +713,7 @@ input[id="manage"] + label{
 input[id="manage"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -760,7 +760,7 @@ input[id="new"] + label{
 input[id="new"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -807,7 +807,7 @@ input[id="design"] + label{
 input[id="design"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -854,7 +854,7 @@ input[id="industry"] + label{
 input[id="industry"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -901,7 +901,7 @@ input[id="graduate"] + label{
 input[id="graduate"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/Vectorblue2.png);
+	background: url(img/studentimg/Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -1239,7 +1239,7 @@ input[id="more"] + label span{
 	font-size: 1.25em;
 }
 input[id="more"]:hover + label{
-	transform: scale(0.9);
+	transform: scale(0.95);
 	opacity: 0.8;
 }
 input[id="more"]:checked + label{

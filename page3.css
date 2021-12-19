@@ -1,85 +1,263 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    src: url(nanum-barun-gothic/NanumBarunGothic.ttf) format(truetype);
+}
 
+  *{
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'NanumBarunGothic', sans-serif;
+}
+
+:root {
+    --third-color: #757575; 
+    --four-color: #424242; 
+    --five-color: #212121; 
+}
 /*학교교수진연구실적홍보 첫번째 소개 페이지*/
 
 main {
     max-width: 1504px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 32px;
 }
 
-header {
-    height: 700px !important;
-}
-
-.tab-inner {}
-.tabs {
-    top: 0;
-    left: 0;
-    height: 700px;
-    width: 100vw;
+/*랜딩 이미지*/
+.top_img {width: 100%; height: 585px; background-image: url(img/Professor_item/image\ 99.png); background-position: center; background-size: cover; transform: translateY(-30px); position: relative;}
+.top_img div{position: absolute; left: 20%; bottom: 20%;}
+.top_img p{font-size: 18px; color: #bebebe; z-index: 3;}
+.top_img h1{font-size: 72px; color: white; z-index: 3; margin-top: 16px;}
+.top_img:after {
     position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.308) 0%,rgba(0, 0, 0, 0.89) 100%);
     z-index: -1;
 }
-.items {
-    height: 100%;
-    width: 300%;
+
+/*제목*/
+.head_title{margin-top: 50px;}
+.head_title h2{font-size: 48px; line-height: 160%; color: var(--five-color);}
+.head_title span{font-size: 14px; color: var(--third-color); margin-right: 46px; color: #9a9a9a;}
+.head_title span:nth-child(1){}
+.head_title span:nth-child(2){}
+.head_title span:nth-child(3){}
+
+
+/*프로필*/
+.profile {margin-top: 36px; position: relative;}
+.profile .profile_area {display: flex; position: relative; width: 400px; gap: 32px;}
+.profile .profile_area .profile_info {display: flex; flex-direction: column; gap: 0px; justify-content: flex-end;}
+.profile .profile_area img{width: 90px; height: 90px; border-radius: 50%;}
+.profile .profile_area p{}
+.profile .profile_area .kr{font-size: 24px; color: var(--five-color); font-weight: 900;}
+.profile .profile_area .en{font-size: 24px; color: var(--third-color);}
+.profile .profile_area .professor_modal{width: 240px; height: 62px; background-color: var(--four-color); position: absolute; bottom: -100px; border-radius: 8px; display: flex; align-items: center; padding: 17px;}
+.profile .profile_area .professor_modal p{color: white; font-size: 14px; line-height: 140%; width: 190px;}
+.profile .profile_area .professor_modal img{width: 36px; height: 36px; cursor: pointer;}
+.profile .profile_area .professor_modal div{width: 36px; height: 36px; position: absolute; top:-20px; width: 0; left: 34px;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 30px solid var(--four-color)
+    }
+
+/*이메일*/
+.email{
+    width: 827px;
     position: absolute;
-    transition: 0.2s ease-in-out;
-}
-
-.items div {
-    height: 100%;
-    width: 33.33333%;
-    float: left;
-}
-
-.items div:nth-child(1){
-    background-image: url(img/교수님\ 캐러셀_1.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.items div:nth-child(2){
-    background-image: url(img/교수님\ 캐러셀_2.jpg);
-}
-.items div:nth-child(3){
-    background-image: url(img/교수님\ 캐러셀_3.jpg);
-}
-
-input[name=tabmenu] {
+    height: 250px;
+    background-color:#cfcfcf;
+    border: 8px;
+    left: 500px;
+    top: -50px;
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
     display: none;
 }
 
-.btn {
+.email .email_info {width: 313px; height: 100%; display: flex; flex-direction: column; gap: 12px;}
+.email .email_info div{display: flex; align-items: center; gap: 24px;}
+.email .email_info div:nth-child(1){}
+.email .email_info div:nth-child(2){}
+.email .email_info div:nth-child(3){}
+.email .email_text {width: 514px; float: right; position: absolute; right: 32px; top: 32px;}
+.email .email_text input{width: 100%; padding: 6px;}
+.email .email_text textarea {width: 100%; height: 160px; padding: 12px;}
+
+/*개요*/
+.Abstract {margin-top: 131px;}
+.Abstract div{float: right; height: 30px; border-bottom: 1px solid var(--four-color);}
+.Abstract div input[type="text"]{border: none; width: 336px; line-height: 30px; height: 100%;}
+.Abstract div input[type="text"]::placeholder {font-size: 14px; color: var(--four-color);}
+.Abstract div img{width: 18px; height: 18px; color: var(--four-color); transform: translateY(2px);}
+.Abstract h3{font-size: 36px; color: var(--five-color); margin-bottom: 36px;}
+.Abstract p{font-size: 18px; line-height: 160%; color: var(--four-color);}
+.Abstract .Abstract_img{width: 827px; height: 369px; background-image: url(img/Professor_item/image\ 97.png); float: right; margin: 28px; background-size: cover; background-position: center;}
+
+/*리서치*/
+.Research_Approach{margin-top: 60px;}
+.Research_Approach h3{margin-bottom: 32px; font-size: 36px; line-height: 160%; color: var(--five-color);}
+.Research_Approach .Research_wrap {display: flex; gap: 33px;}
+.Research_Approach .Research_wrap  .content_wrap {flex: 1 0 60%;}
+.Research_Approach .Research_wrap  .content_wrap .Research_content{margin-bottom: 90px;}
+.Research_Approach .Research_wrap  .Research_content h4{ font-size: 20px; color: var(--five-color); margin-bottom: 46px; font-weight: 900;}
+.Research_Approach .Research_wrap  .Research_content p{color: var(--four-color); line-height: 160%;}
+
+.Research_Approach .Research_img{height: 570px; flex: 1 0 40%; background-image: url(img/Professor_item/image\ 96.png); background-position: center; background-size: cover;}
+
+/*해시태그*/
+.has {margin-top: 126px;}
+.has h3{font-size: 36px; color: var(--five-color); margin-bottom: 32px;}
+.has span{font-size: 20px; margin-right: 36px;}
+.has span:nth-child(1){}
+.has span:nth-child(2){}
+.has span:nth-child(3){}
+.has span:nth-child(4){}
+.has span:nth-child(5){}
+
+
+/*다른 교수진의 연구성과*/
+.main_first {background-color: var(--five-color); margin-top: 100px; padding: 106px 32px 160px 32px;}
+.main_first h3{font-size: 36px; color: white; font-weight: bold;display: inline-block; margin-bottom: 68px;}
+.main_first span{font-size: 24px; margin-left: 30px;}
+.main_first .item_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(336px,auto));
+    grid-auto-rows: minmax(354px, auto);
+    gap: 32px;
+}
+.main_first .item_container .item {background-position: center; background-size: cover; background-repeat: no-repeat; box-shadow: 0px 2px 4px #00000079; transition: all 0.2s ease-in-out; overflow: hidden; }
+.main_first .item_container .item figure{background-position: center; background-size: cover; background-repeat: no-repeat; transition: all 0.2s ease-in-out;}
+.main_first .item_container .item:nth-child(1),
+.main_first .item_container .item:nth-child(6) {
+    position: relative;
+    padding: 30px;
+    grid-column: auto / span 2;
+    z-index: 0;
+    
+}
+
+/*호버 이펙트*/
+.main_first .item_container .item:hover{
+    box-shadow: 0px 6px 20px #0000002f;
+}
+.main_first .item_container .item:hover > figure{
+    transform: scale(106%); transition: all 0.2s ease-in-out;
+}
+.main_first .item_container .item:nth-child(1):hover{
+    transform: scale(102%);
+}
+.main_first .item_container .item:nth-child(6):hover{
+    transform: scale(102%);
+}
+
+
+
+.main_first .item_container .item:nth-child(1) span,
+.main_first .item_container .item:nth-child(6) span{
+    font-size: 18px; color: white; margin-left: 0px; z-index: 10;
+    bottom: 110px; position: absolute;
+}
+
+.main_first .item_container .item:nth-child(1) p,
+.main_first .item_container .item:nth-child(6) p{
+    font-size: 28px; color: white; font-weight: 900; z-index: 10;
+    bottom: 30px; position: absolute;
+}
+
+
+.main_first .item_container .item:nth-child(1)::after,
+.main_first .item_container .item:nth-child(6)::after{
     position: absolute;
-    bottom: 0;
-}
-.btn label {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: #c4c4c4c4;
-    cursor: pointer;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.308) 0%,rgba(0, 0, 0, 0.89) 100%);
+    z-index: -1;
 }
 
-input[id=tab1]:checked ~ .tabs .items {
-    left: 0;
+.main_first .item_container .item:nth-child(1){
+    background-image: url(img/professor_img/1.png);
 }
-input[id=tab2]:checked ~ .tabs .items {
-    left: -100%;
-}
-input[id=tab3]:checked ~ .tabs .items {
-    left: -200%;
+.main_first .item_container .item:nth-child(6){
+    background-image: url(img/professor_img/6.png); 
 }
 
-input[id=tab1]:checked ~ .btn label[for=tab1] {
-    background: chartreuse;
+
+.main_first .item_container .item:nth-child(2),
+.main_first .item_container .item:nth-child(3),
+.main_first .item_container .item:nth-child(4),
+.main_first .item_container .item:nth-child(5),{
+    grid-column: auto / span 1; 
+}
+.main_first .item_container .item:nth-child(2) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/2.png);
+}
+.main_first .item_container .item:nth-child(3) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/3.png);
+}
+.main_first .item_container .item:nth-child(4) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/4.png);
+}
+.main_first .item_container .item:nth-child(5) figure{
+    height: 230px; width: 100%; background-image: url(img/professor_img/5.png);
+}   
+
+
+
+.main_first .item_container .item:nth-child(2) figcaption,
+.main_first .item_container .item:nth-child(3) figcaption,
+.main_first .item_container .item:nth-child(4) figcaption,
+.main_first .item_container .item:nth-child(5) figcaption{
+    height: 124px; background-color: white; padding: 30px;
+}
+.main_first .item_container .item:nth-child(2) figcaption span,
+.main_first .item_container .item:nth-child(3) figcaption span,
+.main_first .item_container .item:nth-child(4) figcaption span,
+.main_first .item_container .item:nth-child(5) figcaption span{
+    font-size: 18px; color: var(--four-color); margin-left: -0px;
+}
+.main_first .item_container .item:nth-child(2) figcaption p,
+.main_first .item_container .item:nth-child(3) figcaption p,
+.main_first .item_container .item:nth-child(4) figcaption p,
+.main_first .item_container .item:nth-child(5) figcaption p{
+    font-size: 20px; color: var(--five-color); font-weight: 900; margin-top: 12px;
 }
 
-input[id=tab2]:checked ~ .btn label[for=tab2] {
-    background: chartreuse;
-}
 
-input[id=tab3]:checked ~ .btn label[for=tab3] {
-    background: chartreuse;
+@media screen and (max-width: 1153px) {
+    .main_first .item_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: minmax(354px, auto);
+        gap: 32px;
+    }
+    .main_first .item_container .item:nth-child(1){
+        order: 1;
+    }
+    .main_first .item_container .item:nth-child(2){
+        order: 2;
+    }
+    .main_first .item_container .item:nth-child(3){
+        order: 3;
+    }
+    .main_first .item_container .item:nth-child(4){
+        order: 5;
+    }
+    .main_first .item_container .item:nth-child(5){
+        order: 6;
+    }
+    .main_first .item_container .item:nth-child(6){
+        order: 4;
+    }
+    
 }

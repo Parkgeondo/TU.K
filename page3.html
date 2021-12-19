@@ -1,66 +1,273 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>한국공학기술대 메인페이지</title>
-	<link rel="stylesheet" href="page3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국공학기술대 메인페이지</title>
+    <link rel="stylesheet" href="page3.css">
     <link rel="stylesheet" href="Utility.css">
 </head>
+
 <body>
     <header>
+        <input type="checkbox" name="" id="studentbar">
+        <input type="checkbox" name="" id="professorbar">
+        <input type="checkbox" name="" id="companybar">
+        <input type="checkbox" name="" id="freshmanbar">
+
         <nav class="Global_navigation">
-            <h1 class="logo">Logo</h1>
-            <div>
-                <ul class="User_Service">
-                    <li>User Service</li>
-                    <li>|</li>
-                    <li><a href="#">학생</a></li>
-                    <li><a href="#">교수</a></li>
-                    <li><a href="#">산학협력</a></li>
-                    <li><a href="#">예비신입생</a></li>
-                </ul>
-                <ul class="utility">
-                    <li><img src="icon/Globe.svg" alt=""></li>
-                    <li><img src="icon/Search.svg" alt=""></li>
-                </ul>
+            <div class="navigationbox">
+                <a href="index.html"><img class="logo" src="img/icon/logo.svg" alt=""></a>
+                <div>
+                    <ul class="User_Service">
+                        <li>User Service</li>
+                        <li>|</li>
+
+                        <label for="studentbar" class="studentbar">
+                            <p>학생</p>
+                        </label>
+
+                        <label for="professorbar" class="professorbar">
+                            <p>교수</p>
+                        </label>
+
+                        <label for="companybar" class="professorbar">
+                            <p>산학협력</p>
+                        </label>
+
+                        <label for="freshmanbar" class="professorbar">
+                            <p>예비신입생</p>
+                        </label>
+
+                    </ul>
+                    <ul class="utility">
+                        <li><img src="icon/Globe.svg" alt=""></li>
+                        <li><img src="icon/Search.svg" alt=""></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <nav class="Global_navigation_2">
             <ul class="Menu">
-                <li><a href="#">교수진 연구 실적</a></li>
-                <li><a href="#">학생 수상 실적</a></li>
-                <li><a href="#">졸업생 갤러리</a></li>
-                <li><a href="#">산학협력단 소개</a></li>
-                <li><a href="#">협력 기업체</a></li>
+                <li><a href="page2.html">교수진 연구 실적</a></li>
+                <li><a href="student.html">학생 수상 실적</a></li>
+                <li><a href="Graduates's gallery.html">졸업생 갤러리</a></li>
+                <li><a href="Industry.html">산학협력</a></li>
+                <li><a href="EHlab.html">EH 연구소 소개</a></li>
             </ul>
         </nav>
-        <div></div>
-        <div class="tab-inner">
-            <input type="radio" name="tabmenu" id="tab1" checked>
-            <input type="radio" name="tabmenu" id="tab2">
-            <input type="radio" name="tabmenu" id="tab3">
-            <div class="tabs">
-                <div class="items">
+    </header>
+    <section class="top_img">
+        <div>
+            <p>Signal Processing & Vision Research</p>
+            <h1>Son, Hyun-woo</h1>
+        </div>
+    </section>
+    <main>
+        <section class="head_title">
+            <h2>Patina Engraver: Visualizing Activity Logs as <br>
+                Patina in Fashionable Trackers</h2>
+            <span>2020/11/20</span><span>한국공학대학교</span><span>제품디자인</span>
+        </section>
+        <section class="profile">
+            <div class="email">
+                <div class="email_info">
+                    <div><img src="img/icon/Group 5359.svg" alt="">055)222-5555</div>
+                    <div><img src="img/icon/Group 5358.svg" alt="">00동 000호</div>
+                    <div><img src="img/icon/Group 5357.svg" alt="">tksrleo@tuk.ac.kr</div>
+                </div>
+                <div class="email_text">
+                    <input type="text" placeholder="제목:">
+                    <textarea name="Text1" cols="40" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="profile_area">
+                <img class="professor_img" src="img/Professor_item/image 95.png" alt="">
+                <div class="profile_info">
+                    <p class="kr">손현후</p>
+                    <p class="en">Son, Hyun-woo</p>
+                </div>
+                
+                <div class="professor_modal">
+                    <div></div>
+                    <p>프로필을 클릭해 <br>
+                        이메일 요청을 보내세요.</p>
+                    <img class="delete" src="img/icon/delete.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="Abstract">
+            <div>
+                <input type="text" placeholder="원하는 내용을 검색해 보세요">
+                <img src="icon/Search.svg" alt="">
+            </div>
+            <h3>Abstract</h3>
+            <p>Despite technological improvements in commercial activity trackers, little attention has been given to
+                their emotional, social, or fashion-related qualities, such as their visual aesthetics and their
+                relationship to self-expression and social connection. As an alternative integrated approach
+                incorporating HCI, fashion, and product design, our project made use of the characteristics of patina to
+                improve activity trackers as fashionable wearables. We developed the Patina Engraving System, which
+                engraves patina-like patterns on an activity tracker according to a user’s activity logs. Using a
+                piercing technique, the patina of activity logs has been made abstract, visually rich, gradually
+                emerging, and historically accumulated. Despite technological improvements in commercial activity
+                trackers, little attention has been given to their emotional, social, or fashion-related qualities, such
+            </p>
+            <div class="Abstract_img"></div>
+            <p>
+                as their visual aesthetics and their relationship to self-expression and social connection. As an
+                alternative integrated approach incorporating HCI, fashion, andDespite technological improvements in
+                commercial activity trackers, little attention has been given to their emotional, social, or
+                fashion-related qualities, such as their visual aesthetics and their relationship to self-expression and
+                social connection. As an alternative integrated approach incorporating HCI, fashion, and product design,
+                our project made use of the characteristics of patina to improve activity trackers as fashionable
+                wearables. We developed the Patina Engraving System, which engraves patina-like patterns on an activity
+                tracker according to a user’s activity logs. Using a piercing technique, the patina of activity logs has
+                been made abstract, visually rich, gradually emerging, and historically accumulated. Despite
+                technological improvements in commercial activity trackers, little attention has been given to their
+                emotional, social, or fashion-related qualities, such as their visual aesthetics and their relationship
+                to self-expression and social connection. As an alternative integrated approach incorporating HCI,
+                fashion, andDespite technological improvements in commercial activity trackers, little attention has
+                been given to their emotional, social, or fashion-related qualities, such as their visual aesthetics and
+                their relationship to self-expression and social connection. As an alternative integrated approach
+                incorporating HCI, fashion, and product design, our project made use of the characteristics of patina to
+                improve activity trackers as fashionable wearables. We developed the Patina Engraving System, which
+                engraves patina-like patterns on an activity tracker according to a user’s activity logs. Using a
+                piercing technique, the patina of activity logs has been made abstract, visually rich, gradually
+                emerging, and historically accumulated. Despite technological improvements in commercial activity
+                trackers, little attention has been given to their emotional, social, or fashion-related qualities, such
+                as their visual aesthetics and their relationship to self-expression and social connection. As an
+                alternative integrated approach incorporating HCI, fashion, and</p>
+
+            </div>
+        </section>
+        <section class="Research_Approach">
+            <h3>Research Approach</h3>
+            <div class="Research_wrap">
+                <div class="Research_img"></div>
+                <div class="content_wrap">
+                <div class="Research_content">
+                    <h4>Design Considerations for Patina-inspired Personalization</h4>
+                    <p>Despite technological improvements in commercial activity trackers,
+                        little attention has been given to their emotional, social, or fashion-related qualities, such
+                        as their visual aesthetics and their relationship to self-expression and social connection. As
+                        an alternative integrated approach incorporating HCI, fashion, and product design, our project
+                        made use of the characteristics of patina to improve activity trackers as fashionable wearables.
+                        We developed the Patina Engraving System,</p>
+                </div>
+                <div class="Research_content">
+                    <h4>Design Considerations for Patina-inspired Personalization</h4>
+                    <p>Despite technological improvements in commercial activity trackers,
+                        little attention has been given to their emotional, social, or fashion-related qualities, such
+                        as their visual aesthetics and their relationship to self-expression and social connection. As
+                        an alternative integrated approach incorporating HCI, fashion, and product design, our project
+                        made use of the characteristics of patina to improve activity trackers as fashionable wearables.
+                        We developed the Patina Engraving System,</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="has">
+            <h3>관련 키워드</h3>
+            <span>인터렉션</span>
+            <span>앱</span>
+            <span>커스터마이징</span>
+            <span>전자공학</span>
+            <span>AR</span>
+        </section>
+    </main>
+    <div class="main_first">
+        <main>
+            <h3>학교 교수진 연구 실적 홍보</h3>
+            <div class="item_container">
+                <a href="page3.html" class="item"><span>Moon-Hwan Lee</span>
+                    <p>Patina-inspired Personalization: Personalizing <br>
+                        Products with Traces of Daily Use</p>
+                </a>
+                <a href="page3.html" class="item">
+                    <figure>
+                    </figure>
+                    <figcaption>
+                        <span>Moon-Hwan Lee</span>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit,
+                        </p>
+                    </figcaption>
+                </a>
+                <a href="page3.html" class="item">
+                    <figure>
+                    </figure>
+                    <figcaption>
+                        <span>Moon-Hwan Lee</span>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit,
+                        </p>
+                    </figcaption>
+                </a>
+                <a href="page3.html" class="item">
+                    <figure>
+                    </figure>
+                    <figcaption>
+                        <span>Moon-Hwan Lee</span>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit,
+                        </p>
+                    </figcaption>
+                </a>
+                <a href="page3.html" class="item">
+                    <figure>
+                    </figure>
+                    <figcaption>
+                        <span>Moon-Hwan Lee</span>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit,
+                        </p>
+                    </figcaption>
+                </a>
+                <a href="page3.html" class="item">
+                    <span>Moon-Hwan Lee</span>
+                    <p>Patina-inspired Personalization: Personalizing <br>
+                        Products with Traces of Daily Use</p>
+                </a>
+            </div>
+    </div>
+    </main>
+    </div>
+
+    <footer>
+        <div class="footerbox">
+            <div class="leftcontent">
+                <div class="logobox">
                     <div>
+                        <h1>TU.K</h1>
                     </div>
-                    <div>
-                    </div>
-                    <div>
+                </div>
+                <div class="Footer_navigation">
+                    <ul>
+                        <li><a href="#">대학정보공시</a></li>
+                        <li><a href="#">예결산공고</a></li>
+                        <li><a href="#">개인정보처방침</a></li>
+                        <li><a href="#">발전기금</a></li>
+                    </ul>
+                    <div class="company">
+                        <p>15073 경기도 시흥시 산기대학로 237 (정왕동) 한국산업기술대학교대표전화 031-8041-1000<br>
+                            입학안내 1588-2036 COPYRIGHT 2014 KOREA POLYTECHNIC<br>
+                            UNIVERSITY. ALL RIGHTS RESERVED.webmaster@kpu.ac.kr</p>
                     </div>
                 </div>
             </div>
-            <div class="btn">
-                <label for="tab1"></label>
-                <label for="tab2"></label>
-                <label for="tab3"></label>
+            <div class="rightcontent">
+                <ul class="utility">
+                    <li><img src="icon/Instagram.svg" alt=""></li>
+                    <li><img src="icon/Facebook.svg" alt=""></li>
+                    <li><img src="icon/Twitter.svg" alt=""></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </footer>
 
-    <main>
-      
-    </main>
+    <script src="script/jquery-1.12.4.js"></script>
+    <script src="script/custom.js"></script>
 </body>
 
 </html>

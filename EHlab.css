@@ -1,0 +1,480 @@
+header {
+    height: 963px !important;
+    background:linear-gradient(
+        to left,
+        rgba(20, 20, 20, 0) 10%,
+        rgba(20, 20, 20, 0.25) 25%,
+        rgba(20, 20, 20, 0.5) 50%,
+        rgba(20, 20, 20, 0.75) 75%,
+        rgba(20, 20, 20, 1) 100%
+    ), url(img/companyimg/header.png);
+}
+
+/*제일 위에 있는 이미지*/
+
+header .hero{
+	width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-20px);
+    text-align: center;
+}
+
+header .hero h1{
+    font-size: 3em;
+    color: var(--white-color);
+}
+
+header .hero h2{
+    font-size: 4.5em;
+    color: var(--white-color);
+    margin-top: 24px;
+}
+
+header .hero p{
+    font-size: 1.25em;
+    color: lightgrey;
+    line-height: 160%;
+    margin-top: 24px;
+}
+
+
+*{margin: 0}
+
+.company{
+    display: flex;
+    justify-content: center;
+/*  padding-top: 100px;*/
+    position: relative;
+    z-index: 0;
+}
+.container{
+    display: grid;
+    width: 1440px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, minmax(20px, auto));
+    gap: 10px 32px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    color: #424242;
+}
+
+.container2{
+    display: grid;
+    width: 1440px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, minmax(20px, auto));
+    gap: 10px 32px;
+    margin-bottom: 160px;
+    color: #424242;
+}
+
+
+
+.item:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: flex;
+    justify-content: center;
+}
+
+.content1{
+    width: 100%;
+    height: 322px;
+}
+.content1 h1{
+    font-size: 6em;
+    font-weight: bold;
+    color: #424242;
+}
+.content1 p{
+    font-size: 1.5em;
+    color: #212121;
+    font-weight: 400;
+}
+.content1 h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #BDBDBD;
+    margin-bottom: 8px;
+}
+.content1 li{
+    font-size: 1.13em;
+    color: #212121;
+}
+
+
+.item:nth-child(2){
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content2{
+    width: 100%;
+    height: 617px;
+}
+.content2 h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 8px;
+}
+.content2 li{
+   font-size: 1.1em;
+   color: #212121;
+   margin-bottom: 33px;
+}
+.content2 img{
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.item:nth-child(3){
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 63px;
+}
+
+
+.item:nth-child(4){
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 63px;
+}
+
+
+.content3{
+    width: 100%;
+    height: 198px;
+}
+.content3 h1{
+    font-size: 2.25em;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 8px;
+}
+.content3 h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #757575;
+}
+
+
+.item:nth-child(5){
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.content4{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.content4 div{
+    width: 336px;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-right: 32px;
+}
+.content4 div:nth-child(4){
+    margin-right: 0;
+}
+.content4 div h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0042A0;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+.content4 div:nth-child(2) h1{
+    margin-top: 63px;
+}
+.content4 div h2{
+    font-size: 1.1em;
+    font-weight: 200;
+    color: #212121;
+    font-weight: 145%;
+}
+
+
+.item:nth-child(6){
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.content5{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: solid 1px #BDBDBD;
+}
+
+.item:nth-child(6) .content5 .textbox{
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content5 .textbox h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 24px;
+}
+.content5 .textbox h2{
+    font-size: 1em;
+    font-weight: 300;
+    color: #212121;
+}
+.content5 .profilebox01{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content5 .profilebox01 .smallbox{
+    width: 336px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    margin-right: 32px;
+}
+.content5 .profilebox01 .smallbox:nth-child(2){
+    margin-right: 0;
+}
+.content5 .profilebox01 .smallbox div:nth-child(1){
+    width: 63px;
+    height: 83px;
+    background: url(img/companyimg/profile1.png) center center;
+    background-size: cover;
+    margin-left: 27px;
+}
+.content5 .profilebox01 .smallbox:nth-child(2) div:nth-child(1){
+    width: 63px;
+    height: 83px;
+    background: url(img/companyimg/profile2.png) center center;
+    background-size: cover;
+    margin-left: 27px;
+}
+.content5 .profilebox01 .smallbox div:nth-child(2){
+    display: block;
+    height: 84px;
+    width: 203;
+    margin-left: 12px;
+}
+.content5 .profilebox01 .smallbox div:nth-child(2) h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.content5 .profilebox01 div div:nth-child(2) h2{
+    font-size: 1em;
+    font-weight: 300;
+    color: #212121;
+    position: absolute;
+    margin-top: 8px;
+}
+
+
+.content5 .profilebox02{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content5 .profilebox02 .smallbox{
+    width: 336px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    margin-right: 32px;
+}
+.content5 .profilebox02 .smallbox:nth-child(2){
+    margin-right: 0;
+}
+.content5 .profilebox02 .smallbox div:nth-child(1){
+    width: 63px;
+    height: 83px;
+    background: url(img/companyimg/profile3.png) center center;
+    background-size: cover;
+    margin-left: 27px;
+}
+.content5 .profilebox02 .smallbox div:nth-child(2){
+    display: block;
+    height: 84px;
+    width: 203;
+    margin-left: 12px;
+}
+.content5 .profilebox02 .smallbox div:nth-child(2) h1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.content5 .profilebox02 div div:nth-child(2) h2{
+    font-size: 1em;
+    font-weight: 300;
+    color: #212121;
+    position: absolute;
+    margin-top: 8px;
+}
+
+/*넘버스*/
+
+.numbers{
+    width: 100%;
+    height: 536px;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+}
+.numbersbox{
+    width: 1440px;
+    height: 100%;
+}
+
+.numbersbox .textbox{
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.numbersbox .textbox h1{
+    font-size: 3em;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 24px;
+}
+.numbersbox .textbox h2{
+    font-size: 1em;
+    color: #212121;
+}
+
+.numbersbox .numberssmall{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.numbersbox .numberssmall div{
+    width: 460px;
+    height: 289px;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 32px;
+    text-align: center;
+}
+.numbersbox .numberssmall div h1{
+    font-size: 4.5em;
+    font-weight: bold;
+    color: #0042A0;
+    margin-top: 92px;
+    margin-bottom: 8px;
+}
+.numbersbox .numberssmall div h2{
+    font-size: 1em;
+    font-weight: 300;
+    color: #212121;
+}
+.numbersbox .numberssmall div:nth-child(3){
+    margin-right: 0;
+}
+
+
+/*아래 그리드*/
+
+.item2:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.item2:nth-child(1) .content5{
+    border: none;
+}
+.item2:nth-child(1) .content5 .textbox{
+    width: 100%;
+    height: 115px;
+    text-align: center;
+    margin-top: 36px;
+}
+.item2:nth-child(1) .content5 .profilebox01 .smallbox{
+    width: 459px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    margin-right: 32px;
+    border-radius: 10px;
+    border: solid 1px #212121;
+}
+.item2:nth-child(1) .content5 .profilebox01 .smallbox:nth-child(3){
+    margin-right: 0;
+}
+.item2:nth-child(1) .content5 .profilebox01 div div:nth-child(2) h2{
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 160%;
+    color: #212121;
+    position: absolute;
+    margin-top: 4px;
+    margin-top: 4px;
+}
+
+.item2:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: blue;
+}
+
+.content6{
+    width: 100%;
+    height: 538px;
+}
