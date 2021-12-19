@@ -7,11 +7,13 @@
 }
 .page_title h1{
 	font-size: 36px;
+	color: #212121;
 }
 .page_title p{
 	margin-top: 30px;
 	font-size: 20px;
 	line-height: 160%;
+	color: #424242;
 }
 
 .hero{
@@ -34,10 +36,12 @@
 }
 .container .a h2, .container .b h2, .container .c h2, .container .d h2{
 	font-size: 36px;
+	color: #212121;
 }
 .container .a p, .container .b p, .container .c p, .container .d p{
 	font-size: 18px;
 	line-height: 160%;
+	color: #424242;
 }
 .subtitle{
 	display: flex;
@@ -49,6 +53,7 @@
 	color: black;
 	text-decoration: underline;
 }
+
 /*창업지원본부*/
 
 .container .a .item:nth-child(1){

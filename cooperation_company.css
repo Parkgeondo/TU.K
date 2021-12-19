@@ -43,11 +43,14 @@
 	text-align: center;
 }
 .content1 h1{
-	font-size: 3em;
+	font-size: 36px;
 	margin-bottom: 23px;
+	color: #212121;
 }
 .content1 p{
-	font-size: 1.25em;
+	font-size: 20px;
+	line-height: 160%;
+	color: #424242;
 }
 
 

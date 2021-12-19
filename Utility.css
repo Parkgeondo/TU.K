@@ -105,6 +105,11 @@ header nav .User_Service {
     opacity: 0.;
 }
 
+
+/*유저서비스 높이 조절(박건도 추가)*/
+.User_Service li {line-height: 26px;}
+.User_Service label p{line-height: 26px;}
+
 /*위쪽 메뉴 배경 만들어지는 애니메이션(박건도 추가)*/
 
 header nav .User_Service label:before{

@@ -32,14 +32,14 @@ main {
 }
 
 .header_info h1{
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 30px;
-    color: var(--five --five-color);
+    color: var(--five-color);
 }
 
 .header_info p {
     line-height: 160%;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--four-color);
 }
 

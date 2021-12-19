@@ -666,7 +666,7 @@ input[id="energy"] + label{
 input[id="energy"] + label span{
 	width: 18px;
 	height: 12px;
-	background: url(img/studentimg/studentimg/Vectorblue2.png);
+	background: url(img/studentimg//Vectorblue2.png);
 	background-size: cover;
 	transition: all 0.3s;
 	opacity: 1;
@@ -1030,13 +1030,14 @@ input[type=submit]{
 	width: 68px;
 	height: 8px;
 	background: #FC9B2C;
+	margin-bottom: 6px;
 }
 .wordbox .aaa h1{
 	font-size: 0.88em;
 	margin-bottom: 108px;
 }
 .wordbox .aaa h2{
-	font-size: 2.25em;
+	font-size: 1.75em;
 	margin-bottom: 40px;
 	transition: all 0.3s;
 }
@@ -1059,7 +1060,6 @@ input[type=submit]{
 	height: 560px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 	transition: all ease-in-out 0.4s;
-	background: url(https://images.unsplash.com/photo-1611117775350-ac3950990985?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80) center center;
 }
 .imgbox a{
 	width: 100%;
@@ -1072,7 +1072,6 @@ input[type=submit]{
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-	opacity: 0;
 }
 
 /*기계설계공학*/

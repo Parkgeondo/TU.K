@@ -300,10 +300,18 @@
 }
 
 .content5 .openinfo{
-	width: 100%;
+	width: 1440px;
 	height: 543px;
 	display: none;
-	transform: translateY(240px);
+	transform: translateY(120px);
+	position: absolute;
+	transition: all 0.3s;
+}
+
+.item:nth-child(11) .content5 .openinfo{
+	width: 1440px;
+	transform: translateY(480px);
+	position: absolute;
 }
 .content5 .openinfo div:nth-child(1){
 	width: 100%;
@@ -363,7 +371,6 @@ input[id="open1"]:checked ~ .container .item:nth-child(10) .content5 .openinfo{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	transform: translateY(-240px);
 }
 input[id="open2"]:checked ~ .container .item:nth-child(11) .content5{
 	height: 1271px;
@@ -377,6 +384,12 @@ input[id="open2"]:checked ~ .container .item:nth-child(11) .content5 label{
 	transform: rotate(0deg);
 	background: url(img/studentimg/openbuttonblack.png);
 	margin-top: 34px;
+}
+input[id="open2"]:checked ~ .container .item:nth-child(11) .content5 .openinfo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	transform: translateY(120px);
 }
 
 /*다른 수상작품*/

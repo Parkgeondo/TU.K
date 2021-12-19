@@ -6,11 +6,13 @@
 }
 .page_title h1{
 	font-size: 36px;
+	color: #212121;
 }
 .page_title p{
 	margin-top: 30px;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 160%;
+	color: #424242;
 }
 
 .hero{
