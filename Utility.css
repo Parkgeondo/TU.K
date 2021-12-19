@@ -64,6 +64,7 @@ header nav.Global_navigation .navigationbox{
 header nav.Global_navigation{
     background: #0042A0;
     z-index: 3;
+    padding: 0 36px;
 }
 header nav.Global_navigation_2 {
     top:50px;
@@ -104,6 +105,11 @@ header nav .User_Service {
     border: /*var(--white-color)*/#0060BF 1px solid;
     opacity: 0.;
 }
+
+/*utility*/
+.utility li:nth-child(1){transform: translateY(5px);}
+.utility li:nth-child(2){transform: translateY(6px);}
+
 
 /*위쪽 메뉴 배경 만들어지는 애니메이션(박건도 추가)*/
 
@@ -387,10 +393,15 @@ input[id="companybar"]:checked ~ .slidebox_3{
 }
 
 유저:신입생
-
 input[id="freshmanbar"]{
     display: none;
 }
+
+input[id="freshmanbar"]{
+    position: absolute;
+    left: -50px;
+}
+
 .freshmanbar{
     display: block;
     position: relative;
