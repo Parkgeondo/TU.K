@@ -1,24 +1,24 @@
 *{margin: 0}
 
 .student{
-	display: flex;
-	justify-content: center;
-/*	padding-top: 100px;*/
-	position: relative;
-	z-index: 0;
+  display: flex;
+  justify-content: center;
+/*  padding-top: 100px;*/
+  position: relative;
+  z-index: 0;
 }
 .backgroundimg{
-	z-index: -1;
-	width: 100vw;
-	height: 925px;
-	position: absolute;
-	top: 0;
-	background: url(img/studentimg/background.png) center center;
+  z-index: -1;
+  width: 100vw;
+  height: 925px;
+  position: absolute;
+  top: 0;
+  background: url(img/studentimg/background.png) center center;
 }
 .container{
-	display: grid;
-	width: 1440px;
-	grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  width: 1440px;
+  grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(30, minmax(20px, auto));
     gap: 10px 32px;
     margin-top: 160px;
@@ -26,1234 +26,1264 @@
     color: #424242;
 }
 .item{
-	/*background: rgba(111, 111, 111, 0.5);*/
+  /*background: rgba(111, 111, 111, 0.5);*/
 }
 
 /*학생수상작품 타이틀*/
 
 .item:nth-child(1){
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 4;
-	grid-column-end: 10;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  display: flex;
+  align-items: flex-end;
 }
 .content1{
-	text-align: center;
+  text-align: center;
 }
 .content1 h1{
-	font-size: 3em;
-	margin-bottom: 23px;
+  font-size: 36px;
+  margin-bottom: 23px;
+  color: #212121;
 }
 .content1 p{
-	font-size: 1.25em;
+  font-size: 20px;
+  line-height: 160%;
+  color: #424242;
 }
 
 /*연도 선택 기능*/
 
 .item:nth-child(2){
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 1;
-	grid-column-end: 5;
-	padding-top: 150px;
-	display: flex;
-	align-items: flex-end
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding-top: 150px;
+  display: flex;
+  align-items: flex-end
 }
 
 .content2{
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 input[id="left"]{
-	display: none;
+  display: none;
 }
 input[id="left"] + label{
-	display: block;
-	width: 100%;
-	height: 40px;
-	background: #0091F2;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #0091F2;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 input[id="left"]:checked + label{
-	background: #0060BF;
-	height: 50px;
+  background: #0060BF;
+  height: 50px;
 }
 
 input[id="middle"]{
-	display: none;
+  display: none;
 }
 input[id="middle"] + label{
-	display: block;
-	width: 100%;
-	height: 40px;
-	background: #0091F2;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #0091F2;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 input[id="middle"]:checked + label{
-	background: #0060BF;
-	height: 50px;
+  background: #0060BF;
+  height: 50px;
 }
 
 input[id="right"]{
-	display: none;
+  display: none;
 }
 input[id="right"] + label{
-	display: block;
-	width: 100%;
-	height: 40px;
-	background: #0091F2;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #0091F2;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 input[id="right"]:checked + label{
-	background: #0060BF;
-	height: 50px;
+  background: #0060BF;
+  height: 50px;
 }
 
 .content2 p{
-	font-size: 2.25em;
-	color: #424242;
-	transition: all 0.3s;
+  font-size: 2.25em;
+  color: #424242;
+  transition: all 0.3s;
 }
 
 .item:nth-child(3){
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 5;
-	grid-column-end: 9;
-	padding-top: 150px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  padding-top: 150px;
+  display: flex;
+  align-items: flex-end;
 }
 .item:nth-child(4){
-	grid-row-start: 2;
-	grid-row-end: 3;
-	grid-column-start: 9;
-	grid-column-end: 13;
-	padding-top: 150px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  padding-top: 150px;
+  display: flex;
+  align-items: flex-end;
 }
 
 /*작품 목록*/
 
 .item:nth-child(5){
-	grid-row-start: 3;
-	grid-row-end: 4;
-	grid-column-start: 6;
-	grid-column-end: 8;
-	padding-top: 150px;
-	display: block;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  padding-top: 150px;
+  display: block;
 }
 
 .content3 h1{
-	font-size: 3em;
+  font-size: 3em;
 }
 
 /*분류*/
 
 .item:nth-child(6){
-	grid-row-start: 3;
-	grid-row-end: 4;
-	grid-column-start: 8;
-	grid-column-end: 10;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  display: flex;
+  align-items: flex-end;
 }
 
 .content4{
-	width: 100%;
+  width: 100%;
 }
 input[id="section"]{
-	display: none;
+  display: none;
 }
 .content4 label{
-	display: block;
-	width: 133px;
-	height: 48px;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.9s;
+  display: block;
+  width: 133px;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.9s;
 }
 
 .content4 label span{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	border-radius: 100px;
-	width: 100%;
-	height: 100%;
-	border: solid 1px #0060BF;
-	font-size: 18px;
-	color: #424242;
-	transition: all 0.3s;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #0060BF;
+  font-size: 18px;
+  color: #424242;
+  transition: all 0.3s;
+  text-align: center;
 }
 
 #small{
-	display: none;
+  display: none;
 }
 
 input[id="section"]:checked ~ .container #large .content4 label span{
-	background: #0060BF;
-	color: #fff;
+  background: #0060BF;
+  color: #fff;
 }
 
 input[id="section"]:checked ~ .container #small{
-	display: block;
-	opacity: 1;
-	/*background: green;*/
+  display: block;
+  opacity: 1;
+  /*background: green;*/
 }
 
 .item:nth-child(7){
-	grid-row-start: 4;
-	grid-row-end: 7;
-	grid-column-start: 1;
-	grid-column-end: 13;
-	padding-top: 64px;
-	opacity: 0;
-	transition: all 0.6s;
-	overflow: hidden;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  padding-top: 64px;
+  opacity: 0;
+  transition: all 0.6s;
+  overflow: hidden;
 }
 
 .content5{
-	width: 100%;
+  width: 100%;
 }
 
 .content5 h1{
-	font-size: 36px;
-	margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 
 .allselect{
-	display: flex;
-	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .allselect button{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #0060BF;
-	width: 46px;
-	height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0060BF;
+  width: 46px;
+  height: 46px;
 }
 .allselect button span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorwhite.png);
-	background-size: cover;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorwhite.png);
+  background-size: cover;
 }
 .allselect h2{
-	font-size: 24px;
-	margin-left: 24px;
-	color: #0060BF;
+  font-size: 24px;
+  margin-left: 24px;
+  color: #0060BF;
 }
 
 .content5 .part{
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	height: 120px;
-	color: #0060BF;
-	/*background: orange;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 120px;
+  color: #0060BF;
+  /*background: orange;*/
 }
 
 input[id="ma"]{
-	display: none;
+  display: none;
 }
 input[id="ma"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="ma"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="ma"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="ma"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="ma"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 input[id="chine"]{
-	display: none;
+  display: none;
 }
 input[id="chine"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="chine"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="chine"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="chine"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="chine"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="meca"]{
-	display: none;
+  display: none;
 }
 input[id="meca"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="meca"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="meca"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="meca"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="meca"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="elec"]{
-	display: none;
+  display: none;
 }
 input[id="elec"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="elec"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="elec"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="elec"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="elec"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="compu"]{
-	display: none;
+  display: none;
 }
 input[id="compu"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="compu"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="compu"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="compu"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="compu"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="game"]{
-	display: none;
+  display: none;
 }
 input[id="game"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="game"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="game"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="game"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="game"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="life"]{
-	display: none;
+  display: none;
 }
 input[id="life"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="life"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="life"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="life"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="life"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="nano"]{
-	display: none;
+  display: none;
 }
 input[id="nano"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="nano"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="nano"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="nano"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="nano"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="energy"]{
-	display: none;
+  display: none;
 }
 input[id="energy"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="energy"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg//Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg//Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="energy"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="energy"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="energy"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="manage"]{
-	display: none;
+  display: none;
 }
 input[id="manage"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="manage"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="manage"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="manage"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="manage"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="new"]{
-	display: none;
+  display: none;
 }
 input[id="new"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="new"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="new"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="new"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="new"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="design"]{
-	display: none;
+  display: none;
 }
 input[id="design"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="design"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="design"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="design"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="design"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="industry"]{
-	display: none;
+  display: none;
 }
 input[id="industry"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="industry"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="industry"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="industry"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="industry"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 input[id="graduate"]{
-	display: none;
+  display: none;
 }
 input[id="graduate"] + label{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 205.5px;
-	height: 60px;
-	border: solid 1px #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 205.5px;
+  height: 60px;
+  border: solid 1px #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 17px 20px;
 }
 
 input[id="graduate"] + label span{
-	width: 18px;
-	height: 12px;
-	background: url(img/studentimg/Vectorblue2.png);
-	background-size: cover;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 18px;
+  height: 12px;
+  background: url(img/studentimg/Vectorblue2.png);
+  background-size: cover;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="graduate"] + label h3{
-	width: 112px;
-	height: 26px;
-	font-size: 18px;
-	display: block;
-	text-align: right;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: all 0.3s;
-	opacity: 1;
+  width: 112px;
+  height: 26px;
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  opacity: 1;
 }
 
 input[id="graduate"]:checked + label h3{
-	/*background: #9A9A9A;*/
-	opacity: 0.2;
+  /*background: #9A9A9A;*/
+  opacity: 0.2;
 }
 
 input[id="graduate"]:checked + label span{
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 
 /*검색 기능*/
 
 .item:nth-child(8){
-	grid-row-start: 7;
-	grid-row-end: 8;
-	grid-column-start: 2;
-	grid-column-end: 3;
-	padding-top: 90px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding-top: 90px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .content6{
-	width: 100%;
+  width: 100%;
 }
 .content6 p{
-	font-size: 1.75em;
+  font-size: 1.75em;
 }
 
 .item:nth-child(9){
-	grid-row-start: 8;
-	grid-row-end: 9;
-	grid-column-start: 2;
-	grid-column-end: 12;
-	padding-top: 10px;
-	padding-bottom: 160px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  padding-top: 10px;
+  padding-bottom: 160px;
+  display: flex;
+  align-items: flex-end;
 }
 
 form{
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 input{
-	font-size: 1.13em;
+  font-size: 1.13em;
 }
 input[type="text"]{
-	width: 92%;
-	height: 72px;
-	padding: 0 24px;
-	border: solid 1px #0060BF;
+  width: 92%;
+  height: 72px;
+  padding: 0 24px;
+  border: solid 1px #0060BF;
 }
 input[type=submit]{
-	width: 8%;
-	border: none;
-	background: #0060BF;
-	color: #fff;
+  width: 8%;
+  border: none;
+  background: #0060BF;
+  color: #fff;
 }
 
 /*기계공학과*/
 
 .item:nth-child(10){
-	grid-row-start: 9;
-	grid-row-end: 10;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: flex-end;
 }
 
 .content8{
-	width: 100%;
-	text-align: left;
+  width: 100%;
+  text-align: left;
 }
 .content8 h1{
-	font-size: 2.25em;
+  font-size: 2.25em;
 }
 .content8 p{
-	font-size: 1.5em;
-	color: #BDBDBD;
+  font-size: 1.5em;
+  color: #BDBDBD;
 }
 
 .item:nth-child(11){
-	grid-row-start: 9;
-	grid-row-end: 13;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  display: flex;
+  align-items: flex-end;
 }
 
 .wordbox{
-	display: flex;
-	align-items: center;
-	width: 50%;
-	height: 560px;
-	background: #fff;
-	overflow: hidden;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 560px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .wordbox .aaa{
-	margin-left: 92px;
-	margin-right: 107px;
+  margin-left: 92px;
+  margin-right: 107px;
 }
 .wordbox .aaa .ccc{
-	width: 68px;
-	height: 8px;
-	background: #FC9B2C;
-	margin-bottom: 6px;
+  width: 68px;
+  height: 8px;
+  background: #FC9B2C;
+  margin-bottom: 6px;
 }
 .wordbox .aaa h1{
-	font-size: 0.88em;
-	margin-bottom: 108px;
+  font-size: 0.88em;
+  margin-bottom: 108px;
 }
 .wordbox .aaa h2{
-	font-size: 1.75em;
-	margin-bottom: 40px;
-	transition: all 0.3s;
+  font-size: 1.75em;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+  color: #212121;
+  line-height: 160%;
 }
 .wordbox .aaa .bbb{
-	width: 336px;
+  width: 336px;
 }
 .wordbox .aaa a{
-	text-decoration: none;
-	color: #000;
-	transition: all 0.3s;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
 }
 .wordbox .aaa a h2:hover{
-	color: #FC9B2C;
+  color: #FC9B2C;
 }
 .wordbox .aaa .bbb p{
-	font-size: 0.88em;
+  font-size: 0.88em;
+  line-height: 160%;
+  color: #424242;
 }
 .imgbox{
-	width: 50%;
-	height: 560px;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-	transition: all ease-in-out 0.4s;
+  width: 50%;
+  height: 560px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 0.4s;
 }
+
+.imgbox {position: relative;}
+
+.imgbox::before, .imgbox::after {
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:95%;
+    height: 92%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+.imgbox::before {
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    width:0;
+}
+.imgbox::after {
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    height:0;
+}
+
+.imgbox:hover::before {width:95.4%}
+.imgbox:hover::after {height:92.5%}
+
 .imgbox a{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .imgbox img:hover + .blackhover{
-	height: 100%;
+  height: 100%;
 }
 .imgbox a img{
-	width: 100%;
-	height: 100%;
-	background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 /*기계설계공학*/
 
 .item:nth-child(12){
-	grid-row-start: 13;
-	grid-row-end: 14;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 13;
+  grid-row-end: 14;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 .item:nth-child(13){
-	grid-row-start: 13;
-	grid-row-end: 17;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 13;
+  grid-row-end: 17;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 
 /*게임공학*/
 
 .item:nth-child(14){
-	grid-row-start: 17;
-	grid-row-end: 18;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 17;
+  grid-row-end: 18;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 .item:nth-child(15){
-	grid-row-start: 17;
-	grid-row-end: 21;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 17;
+  grid-row-end: 21;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 
 /*메카트로닉스*/
 
 .item:nth-child(16){
-	grid-row-start: 21;
-	grid-row-end: 22;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 21;
+  grid-row-end: 22;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 .item:nth-child(17){
-	grid-row-start: 21;
-	grid-row-end: 25;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	padding-top: 80px;
-	display: flex;
-	align-items: flex-end;
-	padding-bottom: 80px;
+  grid-row-start: 21;
+  grid-row-end: 25;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
 }
 
 /*디자인공학*/
 
 .item:nth-child(18){
-	grid-row-start: 25;
-	grid-row-end: 26;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 25;
+  grid-row-end: 26;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: flex-end;
 }
 .item:nth-child(19){
-	grid-row-start: 25;
-	grid-row-end: 29;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	display: flex;
-	align-items: flex-end;
-	padding-bottom: 80px;
+  grid-row-start: 25;
+  grid-row-end: 29;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
 }
 
 /*더보기*/
 
 .item:nth-child(20){
-	grid-row-start: 29;
-	grid-row-end: 30;
-	grid-column-start: 1;
-	grid-column-end: 13;
+  grid-row-start: 29;
+  grid-row-end: 30;
+  grid-column-start: 1;
+  grid-column-end: 13;
 }
 .content7{
-	width: 1440px;
+  width: 1440px;
 }
 .content9{
-	width: 100%;
-	transition: all 0.6s;;
-	display: none;
+  width: 100%;
+  transition: all 0.6s;;
+  display: none;
 }
 .content10 h1{
-	font-size: 2.25em;
+  font-size: 2.25em;
 }
 .content10 p{
-	font-size: 1.5em;
-	color: #BDBDBD;
+  font-size: 1.5em;
+  color: #BDBDBD;
 }
 
 .content9 .item2:nth-child(1){
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: flex-end;
 }
 .content9 .item2:nth-child(2){
-	grid-row-start: 1;
-	grid-row-end: 5;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	display: flex;
-	align-items: flex-end;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  display: flex;
+  align-items: flex-end;
 
 }
 .content9 .item2:nth-child(3){
-	grid-row-start: 5;
-	grid-row-end: 6;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	display: flex;
-	align-items: flex-end;
-	padding-top: 80px;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 80px;
 }
 .content9 .item2:nth-child(4){
-	grid-row-start: 5;
-	grid-row-end: 9;
-	grid-column-start: 4;
-	grid-column-end: 13;
-	display: flex;
-	align-items: flex-end;
-	padding-top: 80px;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  grid-column-start: 4;
+  grid-column-end: 13;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 80px;
 }
 input[id="more"]{
-	display: none;
+  display: none;
 }
 input[id="more"] + label{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #B9DCFB;
-	width: 100%;
-	height: 120px;
-	background: #0060BF;
-	position: relative;
-	cursor: pointer;
-	transition: all 0.3s;
-	border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #B9DCFB;
+  width: 100%;
+  height: 120px;
+  background: #0060BF;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 20px;
 }
 
 input[id="more"] + label span{
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
 input[id="more"]:hover + label{
-	transform: scale(0.95);
-	opacity: 0.8;
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 input[id="more"]:checked + label{
-	opacity: 0;
-	display: none;
+  opacity: 0;
+  display: none;
 }
 
 input[id="more"]:checked + label + .content9{
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(30, minmax(20px, auto));
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, minmax(20px, auto));
     gap: 0 32px 0 32px;
 
 }
-
-
-
-

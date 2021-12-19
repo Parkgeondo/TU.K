@@ -70,10 +70,8 @@
 	background: url(img/studentimg/product.png);
 	background-size: cover;
 	transition: all 0.3s;
-	opacity: 0.4;
 }
 .item:nth-child(2) div:hover{
-	opacity: 1;
 	transform: scale(1.05);
 }
 .item:nth-child(3){
@@ -92,10 +90,8 @@
 	background: url(img/studentimg/product2.png);
 	background-size: cover;
 	transition: all 0.3s;
-	opacity: 0.4;
 }
 .item:nth-child(3) div:hover{
-	opacity: 1;
 	transform: scale(1.05);
 }
 .item:nth-child(4){
@@ -114,10 +110,8 @@
 	background: url(img/studentimg/product3.png);
 	background-size: cover;
 	transition: all 0.3s;
-	opacity: 0.4;
 }
 .item:nth-child(4) div:hover{
-	opacity: 1;
 	transform: scale(1.05);
 }
 .item:nth-child(5){
@@ -136,10 +130,8 @@
 	background: url(img/studentimg/product4.png);
 	background-size: cover;
 	transition: all 0.3s;
-	opacity: 0.4;
 }
 .item:nth-child(5) div:hover{
-	opacity: 1;
 	transform: scale(1.05);
 }
 .item:nth-child(6){
@@ -158,10 +150,8 @@
 	background: url(img/studentimg/product5.png);
 	background-size: cover;
 	transition: all 0.3s;
-	opacity: 0.4;
 }
 .item:nth-child(6) div:hover{
-	opacity: 1;
 	transform: scale(1.05);
 }
 

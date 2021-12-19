@@ -105,7 +105,8 @@ main {
 .lab h2{ text-align: center; width: 100%; color: white; font-size: 36px; line-height: 160px;}
 .lab_content_box .lab_content_info{}
 .lab_content_box .lab_content_info p{flex: 0 1 581px; color: white; line-height: 160%;}
-.lab_content_box .lab_content_info .lab_button{width: 296px; height: 48px; border: none; background-color: #0042A0; margin-top: 90px; color: white; font-size: 16px; font-weight: 900;}
+.lab_content_box .lab_content_info .lab_button{width: 296px; height: 48px; border: none; transition: all 0.3s ease-in-out; background-color: #0042A0; margin-top: 90px; color: white; font-size: 16px; font-weight: 900;}
+.lab_content_box .lab_content_info .lab_button:hover{background: #EA7224; transition: all 0.3s ease-in-out;}
 .lab_content_box .img{flex: 1 0 705px; background-color: aqua; height: 457px; background-image: url(img/Professor/3.png); background-position: center; background-size: cover;}
 
 
