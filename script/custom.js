@@ -55,6 +55,19 @@ $('.profile_wrap .profile_img').click(function(){
 })
 
 
+/*학생 인터뷰 모달*/
+$(function(){ 
+
+  $(".student").click(function(){
+    $(".inter").fadeIn();
+  });
+  
+  $(".delete").click(function(){
+    $(".inter").fadeOut();
+  });
+  
+});
+
 
 
 

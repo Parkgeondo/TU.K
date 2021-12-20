@@ -44,11 +44,14 @@
 	text-align: center;
 }
 .content1 h1{
-	font-size: 3em;
+	font-size: 36px;
 	margin-bottom: 23px;
+	color: #212121;
 }
 .content1 p{
-	font-size: 1.5em;
+	font-size: 20px;
+	color: #424242;
+	line-height: 160%;
 }
 
 
@@ -323,9 +326,10 @@
 }
 
 .content5 .openinfo p{
-	font-size: 1.5em;
+	font-size: 20px;
 	font-weight: 200;
 	color: #424242;
+	line-height: 160%;
 }
 input[id="open1"]{
 	display: none;

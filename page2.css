@@ -180,3 +180,23 @@ main {
 }
 .modal_img{ background-image: url(img/Professor/image\ 64\ \(1\).png); width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative;}
 .modal_img figcaption{ position: absolute; right: 0; bottom: 0; background-color: var(--five-color); color: white; padding: 8px 20px 8px 20px;}
+
+.award h4{
+    position: relative;
+}
+.award h4:before{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 0%;
+    bottom: 16px;
+    transition: 0.2s;
+    background: var(--key-color);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.award h4:hover:before{
+    width: 100%;
+}
