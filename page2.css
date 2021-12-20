@@ -70,9 +70,7 @@ main {
 .award h4 {font-size: 46px; line-height: 160%; color: var(--five-color);}
 
 
-
-
-.mid_content {margin-top: 160px; padding: 0 32px; margin-bottom: 160px;}
+.mid_content {margin-top: 0px; padding: 0 32px; margin-bottom: 160px;}
 .mid_content_box {display: flex; flex-wrap: wrap; gap: 32px;}
 .mid_content_box h2{font-size: 36px; line-height: 160%; color: var(--five-color);}
 .mid_content_box:nth-of-type(1) {margin-bottom: 120px;}
@@ -86,11 +84,12 @@ main {
     }
 
 @media screen and (max-width: 1520px) {
+    .mid_content {margin-top: 160px;}
     .mid_content_box h2,
     .mid_content_box p {
         transform: none;
     }
-
+    .mid_content_box:nth-of-type(2) h2{padding-left: 0px;}
     .mid_content_box:nth-of-type(2) p{order: 1;}
     .mid_content_box:nth-of-type(2) h1{order: 2;}
     .mid_content_box:nth-of-type(2) img{order: 3;}

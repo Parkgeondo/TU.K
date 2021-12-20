@@ -121,13 +121,13 @@ main {
 .main_first .item_container .item:nth-child(1) span,
 .main_first .item_container .item:nth-child(6) span{
     font-size: 18px; color: white; margin-left: 0px; z-index: 10;
-    bottom: 110px; position: absolute;
+    bottom: 120px; position: absolute;
 }
 
 .main_first .item_container .item:nth-child(1) p,
 .main_first .item_container .item:nth-child(6) p{
     font-size: 28px; color: white; font-weight: 900; z-index: 10;
-    bottom: 30px; position: absolute;
+    bottom: 30px; position: absolute; line-height: 140%;
 }
 
 
@@ -155,7 +155,7 @@ main {
 .main_first .item_container .item:nth-child(3),
 .main_first .item_container .item:nth-child(4),
 .main_first .item_container .item:nth-child(5),{
-    grid-column: auto / span 1; 
+    grid-column: auto / span 1;  
 }
 .main_first .item_container .item:nth-child(2) figure{
     height: 230px; width: 100%; background-image: url(img/professor_img/2.png);
@@ -188,7 +188,7 @@ main {
 .main_first .item_container .item:nth-child(3) figcaption p,
 .main_first .item_container .item:nth-child(4) figcaption p,
 .main_first .item_container .item:nth-child(5) figcaption p{
-    font-size: 20px; color: var(--five-color); font-weight: 900; margin-top: 12px;
+    font-size: 20px; color: var(--five-color); font-weight: 900; margin-top: 16px; line-height: 140%; transform: translateY(-10px);
 }
 
 
